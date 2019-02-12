@@ -136,6 +136,11 @@ li {
         @include txt(11px, $tertiary, $bold);
 
         transition: all .3s;
+        &:hover{
+            background:$tertiary;
+            color:$primary;
+            transition: all .3s;
+        }
     }
 
     .button-circle {
@@ -179,10 +184,22 @@ li {
     }
 
     header {
-        height: 75px;
+        width:100%;
+        height: $header-height;
+        z-index:100;
+        padding:10px 20px;
         background: $secondary;
+        position:fixed;
+        top:0;
 
         @include shadow;
+        .container{
+            max-width:$max-width-desktop;
+            padding:0;
+        }
+        .button-rounded-border{
+           right:0px;
+        }
     }
 
     h1 {
@@ -190,7 +207,12 @@ li {
             padding: 20px 0;
         }
     }
-
+    .first-margin{
+        margin-top:$header-height;
+    }
+    .video-container{
+         max-width:$max-width-desktop;
+    }
     .video-content {
         width: 94%;
         max-width: 94%;
@@ -201,6 +223,12 @@ li {
         padding: 10px 10px 30px;
 
         @include shadow;
+        @media screen and (min-width: $sm) {
+            padding:30px 30px 40px;
+            border-radius:20px;
+           
+
+        }
 
         p {
             &.comment {
@@ -211,7 +239,10 @@ li {
                 font-size:13px;
                 line-height: 120%;
                 opacity:.7;
+@media screen and (min-width: $sm) {
+            font-size:14px;
 
+        }
                 &.show {
                     white-space: normal;
                     overflow: visible;
@@ -235,10 +266,15 @@ li {
             bottom: auto;
             
             opacity: 1;
+            transition:all .3s;
 
             i {
                 font-size: 12px;
                 opacity: .6;
+            }
+            &:hover{
+                width:33px;
+                transition:all .3s;
             }
         }
         .carousel-control-prev {
@@ -280,7 +316,7 @@ li {
 
             li {
                 width: 25px;
-                height: 7px;
+                height: 6px;
                 margin-right: 3px;
                 margin-left: 3px;
                 text-indent: -999px;
@@ -288,9 +324,14 @@ li {
                 border: 1px solid $tertiary;
                 cursor: pointer;
                 background-color: rgba($tertiary, 0);
-
+                transition: all .3s;
+                &:hover{
+                    background-color: rgba($tertiary, .6);
+                    transition: all .3s;
+                }
                 &.active {
                     background-color: rgba($tertiary, 1);
+                    transition: all .3s;
                 }
             }
         }
@@ -314,7 +355,10 @@ li {
     footer {
         border-top: 1px solid rgba($tertiary, 0.2);
         padding: 10px;
-
+        a:hover{
+            opacity:.6;
+            transition: all .3s;
+        }
         img {
             padding: 0 10px;
         }
