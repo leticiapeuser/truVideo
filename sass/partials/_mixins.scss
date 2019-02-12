@@ -1,0 +1,13 @@
+// text
+@mixin txt($size:14px,$color:$white,$weight:$regular){
+  font-family: 'Open Sans', sans-serif;
+  font-size: $size;
+  color: $color;
+  font-weight:$weight;
+}
+
+@mixin shadow($opacity:0.7){
+  box-shadow: 0px 0px 12px 0px rgba($black, $opacity);
+}
+
+// end text

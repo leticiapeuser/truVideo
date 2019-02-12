@@ -1,0 +1,517 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*
+ * Image replacement
+ */
+.ir {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  display: block; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* Clear floats */
+.clear-left {
+  clear: left; }
+
+.clear-right {
+  clear: right; }
+
+.clear {
+  clear: both; }
+
+/* Chrome Frame prompt */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.pie-element {
+  behavior: url("css/PIE.htc");
+  position: relative; }
+
+/* Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
+img {
+  vertical-align: middle; }
+
+/* Remove default fieldset styles. */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* Allow only vertical resizing of textareas. */
+textarea {
+  resize: vertical; }
+
+* {
+  /*@include box-sizing(border-box); */ }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/* GENERAL */
+#vc .modal-dialog {
+  max-width: 400px; }
+#vc .modal-content {
+  border-radius: 10px; }
+  #vc .modal-content .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 30px 25px; }
+    #vc .modal-content .close i {
+      font-size: 18px; }
+  #vc .modal-content .modal-body {
+    padding: 40px 40px 0; }
+    #vc .modal-content .modal-body h2 {
+      padding-top: 22px;
+      padding-bottom: 10px;
+      font-weight: 300; }
+  #vc .modal-content .modal-footer {
+    border-top: 0px;
+    padding: 25px 40px 30px; }
+    #vc .modal-content .modal-footer .button-cta {
+      width: auto;
+      padding: 0 25px; }
+
+/* GENERAL */
+html {
+  height: 100%;
+  position: relative;
+  -webkit-text-size-adjust: none;
+  font-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: none;
+  transition: all .5s; }
+
+body#tru {
+  height: 100%;
+  background-color: #222333;
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: none;
+  transition: all .5s;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#tru a {
+  text-decoration: none;
+  font-weight: normal;
+  transition: all .5s; }
+#tru img {
+  outline: none; }
+#tru a img {
+  border: none; }
+#tru h1, #tru h2, #tru h3, #tru h4, #tru h5, #tru p {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 100%; }
+#tru h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: 300; }
+#tru h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 300; }
+#tru h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #737AAE;
+  font-weight: 300;
+  font-style: italic; }
+#tru h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #737AAE;
+  font-weight: 300; }
+  #tru h4.small {
+    font-size: 18px; }
+  #tru h4.large {
+    font-size: 40px; }
+    #tru h4.large.regular {
+      font-weight: 300; }
+#tru h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #737AAE;
+  font-weight: 300; }
+#tru p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  line-height: 120%; }
+  #tru p.small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #737AAE;
+    font-weight: 500;
+    padding: 5px 0;
+    opacity: .7;
+    line-height: 100%; }
+  #tru p.bold {
+    font-weight: 600; }
+#tru hr {
+  padding: 20px 0 0 0;
+  margin: 0 0 10px;
+  width: 100%;
+  height: 1px;
+  border: 0px;
+  border-bottom: 1px solid #737AAE; }
+#tru .button-rounded-border {
+  border-radius: 20px;
+  border: 2px solid #737AAE;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  color: #737AAE;
+  font-weight: 600;
+  transition: all .3s; }
+#tru .button-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: white;
+  background-color: #3352FF;
+  margin: auto;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+  transition: all .3s; }
+  #tru .button-circle:hover {
+    background-color: #2A2C47;
+    transition: all .3s; }
+  #tru .button-circle.tertiary {
+    background-color: #737AAE; }
+    #tru .button-circle.tertiary:hover {
+      background-color: #2A2C47;
+      transition: all .3s; }
+  #tru .button-circle.cta2 {
+    background-color: #3FE3FD; }
+    #tru .button-circle.cta2:hover {
+      background-color: #2A2C47;
+      transition: all .3s; }
+#tru header {
+  height: 75px;
+  background: #2A2C47;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7); }
+#tru h1 .dealer-name {
+  padding: 20px 0; }
+#tru .video-content {
+  width: 94%;
+  max-width: 94%;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #2A2C47;
+  border-radius: 5px;
+  padding: 10px 10px 30px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7); }
+  #tru .video-content p.comment {
+    opacity: .8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 120%;
+    opacity: .7; }
+    #tru .video-content p.comment.show {
+      white-space: normal;
+      overflow: visible; }
+  #tru .video-content .carousel-item {
+    overflow: none; }
+    #tru .video-content .carousel-item.active {
+      overflow: none; }
+  #tru .video-content .carousel-control {
+    background-color: #2A2C47;
+    height: 50px;
+    width: 25px;
+    top: 50%;
+    margin-top: -10px;
+    bottom: auto;
+    opacity: 1; }
+    #tru .video-content .carousel-control i {
+      font-size: 12px;
+      opacity: .6; }
+  #tru .video-content .carousel-control-prev {
+    border-radius: 0px 25px 25px 0;
+    left: -10px; }
+  #tru .video-content .carousel-control-next {
+    border-radius: 25px 0 0 25px;
+    right: -10px; }
+  #tru .video-content .carousel-caption {
+    bottom: auto;
+    text-align: left;
+    position: relative;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding: 0 25px 0 0; }
+    #tru .video-content .carousel-caption .text-button {
+      z-index: 10;
+      position: absolute;
+      top: -18px;
+      right: -15px;
+      padding: 15px;
+      color: #737AAE; }
+      #tru .video-content .carousel-caption .text-button.collapse {
+        display: none; }
+  #tru .video-content .carousel-indicators {
+    bottom: -35px; }
+    #tru .video-content .carousel-indicators li {
+      width: 25px;
+      height: 7px;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      border-radius: 3px;
+      border: 1px solid #737AAE;
+      cursor: pointer;
+      background-color: rgba(115, 122, 174, 0); }
+      #tru .video-content .carousel-indicators li.active {
+        background-color: #737aae; }
+#tru .cta-buttons {
+  text-align: center;
+  padding: 20px 0 0; }
+  #tru .cta-buttons .cta-buttons-button {
+    text-align: center;
+    padding: 20px;
+    min-width: 120px; }
+    #tru .cta-buttons .cta-buttons-button p {
+      padding-top: 10px; }
+#tru footer {
+  border-top: 1px solid rgba(115, 122, 174, 0.2);
+  padding: 10px; }
+  #tru footer img {
+    padding: 0 10px; }
