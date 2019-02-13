@@ -26,11 +26,11 @@
     }
 
     .modal-content {
-        border-radius: 8px;
+        border-radius: $round5;
         border:0px;
 
                 @media screen and (min-width: $sm) {
-                    border-radius: 20px;
+                    border-radius: $round20;
                 }
 
         .close {
@@ -78,8 +78,8 @@
             .button-cta-rounded{
                 margin:0 10px;
                 width: auto;
-    max-width: 350px;
-    min-width: 120px;
+                max-width: 350px;
+                min-width: 120px;
             }
         }
     }

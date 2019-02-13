@@ -15,13 +15,13 @@
         margin: auto;
         box-sizing: border-box;
         background-color: $bg-color;
-        border-radius: 5px;
+        border-radius: $round5;
         padding: 10px 10px 30px;
 
         @include shadow;
         @media screen and (min-width: $sm) {
             padding:30px 30px 40px;
-            border-radius:20px;
+            border-radius:$round20;
            
 
         }
