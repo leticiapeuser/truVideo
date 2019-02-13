@@ -59,7 +59,7 @@ li {
     }
 
     h1 {
-        @include txt(25px, $white, $regular);
+        @include txt(22px, $white, $regular);
     }
 
     h2 {
@@ -98,10 +98,10 @@ li {
         line-height: 120%;
 
         &.small {
-            @include txt(12px, $tertiary, $middle);
+            @include txt(11px, $tertiary, $bold);
 
-            padding: 5px 0;
-            opacity: .7;
+            padding: 2px 0 5px 0;
+            opacity: 1;
             line-height: 100%;
         }
 
@@ -300,6 +300,12 @@ li {
             max-width: $max-width-desktop;
             padding: 0;
         }
+        .header-logo{
+            max-width:55%;
+            img{
+                width:100%;
+            }
+        }
 
         .button-rounded-border {
             right: 0px;
@@ -346,7 +352,9 @@ li {
 
         .carousel-item {
             overflow: none;
-
+            img{
+                width:100%;
+            }
             &.active {
                 overflow: none;
             }
@@ -391,6 +399,9 @@ li {
             left: 0;
             right: 0;
             padding: 0 25px 0 0;
+            p.small{
+                opacity:.6;
+            }
 
             .text-button {
                 z-index: 10;
@@ -404,6 +415,7 @@ li {
                     display: none;
                 }
             }
+
         }
 
         .carousel-indicators {
@@ -437,15 +449,22 @@ li {
     .cta-buttons {
         width:100%;
         text-align: center;
-        padding: 20px 0 0;
+        padding: 15px 0 0;
+
 
         .cta-buttons-button {
             text-align: center;
-            padding: 20px;
-            min-width: 120px;
+            padding: 10px 0 20px;
+            min-width: 100px;
+
+                @media screen and (min-width: $sm) {
+                    padding: 20px 20px 20px;
+                }
 
             p {
-                padding-top: 10px;
+                padding-top: 5px;
+                text-transform:uppercase;
+                opacity:.8;
             }
         }
     }

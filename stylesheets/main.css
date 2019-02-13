@@ -304,7 +304,7 @@ li {
   line-height: 100%; }
 #tru h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   font-weight: 300; }
 #tru h2 {
@@ -342,11 +342,11 @@ li {
   line-height: 120%; }
   #tru p.small {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     color: #737AAE;
-    font-weight: 400;
-    padding: 5px 0;
-    opacity: .7;
+    font-weight: 600;
+    padding: 2px 0 5px 0;
+    opacity: 1;
     line-height: 100%; }
   #tru p.bold {
     font-weight: 600; }
@@ -483,6 +483,10 @@ li {
   #tru header .container {
     max-width: 850px;
     padding: 0; }
+  #tru header .header-logo {
+    max-width: 55%; }
+    #tru header .header-logo img {
+      width: 100%; }
   #tru header .button-rounded-border {
     right: 0px; }
 #tru h1 .dealer-name {
@@ -520,6 +524,8 @@ li {
       overflow: visible; }
   #tru .video-content .carousel-item {
     overflow: none; }
+    #tru .video-content .carousel-item img {
+      width: 100%; }
     #tru .video-content .carousel-item.active {
       overflow: none; }
   #tru .video-content .carousel-control {
@@ -551,6 +557,8 @@ li {
     left: 0;
     right: 0;
     padding: 0 25px 0 0; }
+    #tru .video-content .carousel-caption p.small {
+      opacity: .6; }
     #tru .video-content .carousel-caption .text-button {
       z-index: 10;
       position: absolute;
@@ -582,13 +590,18 @@ li {
 #tru .cta-buttons {
   width: 100%;
   text-align: center;
-  padding: 20px 0 0; }
+  padding: 15px 0 0; }
   #tru .cta-buttons .cta-buttons-button {
     text-align: center;
-    padding: 20px;
-    min-width: 120px; }
+    padding: 10px 0 20px;
+    min-width: 100px; }
+    @media screen and (min-width: 544px) {
+      #tru .cta-buttons .cta-buttons-button {
+        padding: 20px 20px 20px; } }
     #tru .cta-buttons .cta-buttons-button p {
-      padding-top: 10px; }
+      padding-top: 5px;
+      text-transform: uppercase;
+      opacity: .8; }
 #tru .title {
   text-align: center; }
 #tru .order {
@@ -621,7 +634,7 @@ li {
   #tru .box.dark {
     background: #2A2C47; }
     #tru .box.dark hr {
-      opacity: .3; }
+      opacity: .1; }
     #tru .box.dark .table-title {
       color: white; }
     #tru .box.dark .table-row {
@@ -664,7 +677,7 @@ li {
         transform: translateX(-50%);
         top: -40px; }
 #tru .table-style hr {
-  opacity: .1;
+  opacity: .3;
   padding: 10px 0 0 0;
   margin: 0 0 6px; }
 #tru .table-style .large {
@@ -717,7 +730,7 @@ li {
   text-align: center;
   padding: 0 !important; }
   #tru .modal hr {
-    opacity: .1; }
+    opacity: .3; }
 #tru .modal:before {
   content: '';
   display: inline-block;
