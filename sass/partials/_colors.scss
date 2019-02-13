@@ -8,3 +8,6 @@ $alert:#F33060;
 $modal-bg:white;
 $white:white;
 $black:black;
+
+$disabled: lighten($tertiary,15%);
+$active: $cta;

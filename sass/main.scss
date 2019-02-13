@@ -109,6 +109,18 @@ li {
         &.bold {
             font-weight: $bold;
         }
+
+        &.cta {
+            color: $cta;
+        }
+
+        &.cta2 {
+            color: $cta2;
+        }
+
+        &.payment {
+            color: $payment;
+        }
     }
 
     hr {
@@ -119,8 +131,6 @@ li {
         border: 0px;
         border-bottom: 1px solid $tertiary;
     }
-
-
 
     .button-rounded-border {
         border-radius: 20px;
@@ -136,9 +146,10 @@ li {
         @include txt(11px, $tertiary, $bold);
 
         transition: all .3s;
-        &:hover{
-            background:$tertiary;
-            color:$primary;
+
+        &:hover {
+            background: $tertiary;
+            color: $primary;
             transition: all .3s;
         }
     }
@@ -153,7 +164,7 @@ li {
         font-size: 26px;
         color: white;
         background-color: $cta;
-        margin:auto;
+        margin: auto;
 
         @include shadow;
 
@@ -182,23 +193,111 @@ li {
             }
         }
     }
+    .button-cta-rounded {
+        width: 100%;
+        max-width:350px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-transform:uppercase;
+        padding:15px 20px;
+        color: white;
+        background-color: $cta;
+        margin: auto;
+        transition: all .3s;
+        border:0px;
+
+        &:hover {
+            background-color: $cta2;
+            transition: all .3s;
+        }
+
+        &.disabled {
+            background-color: $tertiary;
+
+            &:hover {
+                background-color: $secondary;
+                transition: all .3s;
+            }
+        }
+
+        &.cta2 {
+            background-color: $cta2;
+
+            &:hover {
+                background-color: $cta;
+                transition: all .3s;
+            }
+        }
+        &.payment {
+            background-color: $payment;
+
+            &:hover {
+                background-color: $primary;
+                transition: all .3s;
+            }
+        }
+    }
+    .cta-text-rounded {
+        width: auto;
+        max-width:270px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight:$bold;
+        text-transform:uppercase;
+        padding:7px 20px;
+        color: white;
+        background-color: $cta;
+        margin: auto;
+        transition: all .3s;
+
+
+        &.disabled {
+            background-color: $tertiary;
+
+           
+        }
+
+        &.cta2 {
+            background-color: $cta2;
+
+            
+        }
+        &.white {
+            background-color: white;
+            color:$tertiary;
+
+            
+        }
+        &.payment {
+            background-color: $payment;
+
+        }
+    }
 
     header {
-        width:100%;
+        width: 100%;
         height: $header-height;
-        z-index:100;
-        padding:10px 20px;
+        z-index: 100;
+        padding: 10px 20px;
         background: $secondary;
-        position:fixed;
-        top:0;
+        position: fixed;
+        top: 0;
 
         @include shadow;
-        .container{
-            max-width:$max-width-desktop;
-            padding:0;
+
+        .container {
+            max-width: $max-width-desktop;
+            padding: 0;
         }
-        .button-rounded-border{
-           right:0px;
+
+        .button-rounded-border {
+            right: 0px;
         }
     }
 
@@ -207,28 +306,17 @@ li {
             padding: 20px 0;
         }
     }
-    .first-margin{
-        margin-top:$header-height;
+
+    .first-margin {
+        margin-top: $header-height;
     }
-    .video-container{
-         max-width:$max-width-desktop;
+
+    .video-container {
+        max-width: $max-width-desktop;
     }
+
     .video-content {
-        width: 94%;
-        max-width: 94%;
-        margin: auto;
-        box-sizing: border-box;
-        background-color: $secondary;
-        border-radius: 5px;
-        padding: 10px 10px 30px;
-
-        @include shadow;
-        @media screen and (min-width: $sm) {
-            padding:30px 30px 40px;
-            border-radius:20px;
-           
-
-        }
+        @include box($secondary);
 
         p {
             &.comment {
@@ -236,13 +324,14 @@ li {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                font-size:13px;
+                font-size: 13px;
                 line-height: 120%;
-                opacity:.7;
-@media screen and (min-width: $sm) {
-            font-size:14px;
+                opacity: .7;
 
-        }
+                @media screen and (min-width: $sm) {
+                    font-size: 14px;
+                }
+
                 &.show {
                     white-space: normal;
                     overflow: visible;
@@ -257,33 +346,34 @@ li {
                 overflow: none;
             }
         }
-        .carousel-control{
+
+        .carousel-control {
             background-color: $secondary;
             height: 50px;
             width: 25px;
             top: 50%;
-            margin-top:-10px;
+            margin-top: -10px;
             bottom: auto;
-            
             opacity: 1;
-            transition:all .3s;
+            transition: all .3s;
 
             i {
                 font-size: 12px;
                 opacity: .6;
             }
-            &:hover{
-                width:33px;
-                transition:all .3s;
+
+            &:hover {
+                width: 33px;
+                transition: all .3s;
             }
         }
+
         .carousel-control-prev {
             border-radius: 0px 25px 25px 0;
             left: -10px;
         }
 
         .carousel-control-next {
-            
             border-radius: 25px 0 0 25px;
             right: -10px;
         }
@@ -325,10 +415,12 @@ li {
                 cursor: pointer;
                 background-color: rgba($tertiary, 0);
                 transition: all .3s;
-                &:hover{
-                    background-color: rgba($tertiary, .6);
+
+                &:hover {
+                    background-color: rgba($tertiary, 0.6);
                     transition: all .3s;
                 }
+
                 &.active {
                     background-color: rgba($tertiary, 1);
                     transition: all .3s;
@@ -338,13 +430,14 @@ li {
     }
 
     .cta-buttons {
+        width:100%;
         text-align: center;
         padding: 20px 0 0;
 
         .cta-buttons-button {
             text-align: center;
             padding: 20px;
-            min-width:120px;
+            min-width: 120px;
 
             p {
                 padding-top: 10px;
@@ -352,13 +445,24 @@ li {
         }
     }
 
+    .title {
+        text-align: center;
+    }
+
+    .order {
+        max-width: $order-max-width-desktop;
+    }
+
     footer {
         border-top: 1px solid rgba($tertiary, 0.2);
         padding: 10px;
-        a:hover{
-            opacity:.6;
+        width: 100%;
+
+        a:hover {
+            opacity: .6;
             transition: all .3s;
         }
+
         img {
             padding: 0 10px;
         }

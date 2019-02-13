@@ -256,29 +256,242 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 /* GENERAL */
-#vc .modal-dialog {
-  max-width: 400px; }
-#vc .modal-content {
-  border-radius: 10px; }
-  #vc .modal-content .close {
+#tru .box {
+  width: 94%;
+  max-width: 94%;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 10px 30px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+  padding: 20px 25px; }
+  @media screen and (min-width: 544px) {
+    #tru .box {
+      padding: 30px 30px 40px;
+      border-radius: 20px; } }
+  #tru .box.dark {
+    background: #2A2C47; }
+    #tru .box.dark hr {
+      opacity: .3; }
+    #tru .box.dark .table-title {
+      color: white; }
+    #tru .box.dark .table-row {
+      color: rgba(255, 255, 255, 0.4); }
+      #tru .box.dark .table-row .price {
+        font-weight: 400;
+        color: white; }
+    #tru .box.dark .table-total .total-text {
+      color: white; }
+    #tru .box.dark .table-total .total-price {
+      color: white; }
+    #tru .box.dark .box-white-bottom {
+      background-color: white;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: calc(100% + 50px);
+      padding: 30px 20px;
+      margin: 30px -25px -20px;
+      position: relative; }
+      #tru .box.dark .box-white-bottom p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        color: #2A2C47;
+        font-weight: 400;
+        line-height: 100%; }
+        #tru .box.dark .box-white-bottom p span.bold {
+          font-weight: 600; }
+      @media screen and (min-width: 544px) {
+        #tru .box.dark .box-white-bottom {
+          padding: 30px 30px 40px;
+          padding: 30px 50px;
+          margin: 30px -30px -40px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          width: calc(100% + 60px); } }
+      #tru .box.dark .box-white-bottom .cta-text-rounded {
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px; }
+#tru .table-style hr {
+  opacity: .1;
+  padding: 10px 0 0 0;
+  margin: 0 0 6px; }
+#tru .table-style .large {
+  min-width: 60%; }
+#tru .table-style .middle {
+  min-width: 15%; }
+#tru .table-style .small {
+  width: 40px;
+  max-width: 40px; }
+#tru .table-style .table-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(34, 35, 51, 0.5);
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase; }
+  #tru .table-style .table-title .price {
+    text-align: right; }
+#tru .table-style .table-row {
+  padding: 7px 0;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #222333;
+  font-weight: 400;
+  text-align: left; }
+  #tru .table-style .table-row .price {
+    font-weight: 600;
+    text-align: right; }
+#tru .table-style .table-total {
+  padding: 0;
+  align-items: center; }
+  #tru .table-style .table-total .total-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #222333;
+    font-weight: 600;
+    text-align: left; }
+  #tru .table-style .table-total .total-price {
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #3352FF;
+    font-weight: 600; }
+    #tru .table-style .table-total .total-price.payment {
+      color: #00BE6D; }
+
+/* GENERAL */
+#tru .modal {
+  text-align: center;
+  padding: 0 !important; }
+  #tru .modal hr {
+    opacity: .1; }
+#tru .modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+  /* Adjusts for spacing */ }
+#tru .modal-dialog {
+  max-width: 600px;
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle; }
+#tru .modal-content {
+  border-radius: 8px;
+  border: 0px; }
+  @media screen and (min-width: 544px) {
+    #tru .modal-content {
+      border-radius: 20px; } }
+  #tru .modal-content .close {
     position: absolute;
-    right: 20px;
-    top: 10px;
-    padding: 30px 25px; }
-    #vc .modal-content .close i {
-      font-size: 18px; }
-  #vc .modal-content .modal-body {
+    right: 0px;
+    top: 0px;
+    padding: 15px 20px;
+    color: #222333;
+    text-shadow: none;
+    opacity: 1;
+    z-index: 100; }
+    #tru .modal-content .close i {
+      font-size: 16px; }
+  #tru .modal-content .modal-body {
     padding: 40px 40px 0; }
-    #vc .modal-content .modal-body h2 {
+    #tru .modal-content .modal-body h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      color: #2A2C47;
+      font-weight: 700;
+      text-align: center; }
+    #tru .modal-content .modal-body p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      color: #2A2C47;
+      font-weight: 400; }
+    #tru .modal-content .modal-body h2 {
       padding-top: 22px;
       padding-bottom: 10px;
       font-weight: 300; }
-  #vc .modal-content .modal-footer {
+  #tru .modal-content .modal-footer {
     border-top: 0px;
-    padding: 25px 40px 30px; }
-    #vc .modal-content .modal-footer .button-cta {
+    padding: 25px 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #tru .modal-content .modal-footer .button-cta-rounded {
+      margin: 0 10px;
       width: auto;
-      padding: 0 25px; }
+      max-width: 350px;
+      min-width: 120px; }
+
+.checkbox.toggle-component label {
+  margin-bottom: 0; }
+  .checkbox.toggle-component label .toggle {
+    margin: 0;
+    transition: all .3s;
+    min-width: 40px;
+    min-height: 20px;
+    width: 40px !important;
+    height: 20px;
+    border-radius: 20px; }
+    .checkbox.toggle-component label .toggle.btn {
+      min-width: 40px;
+      min-height: 20px;
+      width: 40px !important;
+      border-radius: 20px;
+      overflow: hidden; }
+      .checkbox.toggle-component label .toggle.btn.btn-primary {
+        background-color: #3352FF;
+        border: 0px; }
+      .checkbox.toggle-component label .toggle.btn.off {
+        transition: all .3s; }
+        .checkbox.toggle-component label .toggle.btn.off .toggle-handle {
+          margin: -7px 0 0 20px; }
+          .checkbox.toggle-component label .toggle.btn.off .toggle-handle.btn-light {
+            transition: all .3s;
+            background-color: white; }
+    .checkbox.toggle-component label .toggle .btn {
+      font-size: 0px;
+      line-height: 100%;
+      padding: 0;
+      border: 0;
+      width: 100%;
+      height: 20px; }
+    .checkbox.toggle-component label .toggle.btn-light {
+      background-color: #a3a8ca;
+      border: 0px;
+      max-width: 40px;
+      width: 40px !important;
+      height: 20px !important;
+      min-width: 40px;
+      min-height: 20px;
+      max-height: 20px;
+      border-radius: 20px;
+      transition: all .3s;
+      overflow: hidden; }
+    .checkbox.toggle-component label .toggle .toggle-group {
+      transition: all .3s; }
+      .checkbox.toggle-component label .toggle .toggle-group .toggle-handle {
+        position: relative;
+        margin: -7px 0 0 -20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 0; }
+        .checkbox.toggle-component label .toggle .toggle-group .toggle-handle.btn-light {
+          transition: all .3s;
+          background-color: white;
+          overflow: hidden; }
+      .checkbox.toggle-component label .toggle .toggle-group .btn-light {
+        transition: all .3s;
+        background-color: #a3a8ca;
+        overflow: hidden; }
 
 /* GENERAL */
 html {
@@ -369,12 +582,18 @@ li {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: #737AAE;
-    font-weight: 500;
+    font-weight: 400;
     padding: 5px 0;
     opacity: .7;
     line-height: 100%; }
   #tru p.bold {
     font-weight: 600; }
+  #tru p.cta {
+    color: #3352FF; }
+  #tru p.cta2 {
+    color: #3FE3FD; }
+  #tru p.payment {
+    color: #00BE6D; }
 #tru hr {
   padding: 20px 0 0 0;
   margin: 0 0 10px;
@@ -427,6 +646,63 @@ li {
     #tru .button-circle.cta2:hover {
       background-color: #2A2C47;
       transition: all .3s; }
+#tru .button-cta-rounded {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  color: white;
+  background-color: #3352FF;
+  margin: auto;
+  transition: all .3s;
+  border: 0px; }
+  #tru .button-cta-rounded:hover {
+    background-color: #3FE3FD;
+    transition: all .3s; }
+  #tru .button-cta-rounded.disabled {
+    background-color: #737AAE; }
+    #tru .button-cta-rounded.disabled:hover {
+      background-color: #2A2C47;
+      transition: all .3s; }
+  #tru .button-cta-rounded.cta2 {
+    background-color: #3FE3FD; }
+    #tru .button-cta-rounded.cta2:hover {
+      background-color: #3352FF;
+      transition: all .3s; }
+  #tru .button-cta-rounded.payment {
+    background-color: #00BE6D; }
+    #tru .button-cta-rounded.payment:hover {
+      background-color: #222333;
+      transition: all .3s; }
+#tru .cta-text-rounded {
+  width: auto;
+  max-width: 270px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  color: white;
+  background-color: #3352FF;
+  margin: auto;
+  transition: all .3s; }
+  #tru .cta-text-rounded.disabled {
+    background-color: #737AAE; }
+  #tru .cta-text-rounded.cta2 {
+    background-color: #3FE3FD; }
+  #tru .cta-text-rounded.white {
+    background-color: white;
+    color: #737AAE; }
+  #tru .cta-text-rounded.payment {
+    background-color: #00BE6D; }
 #tru header {
   width: 100%;
   height: 75px;
@@ -536,6 +812,7 @@ li {
         background-color: #737aae;
         transition: all .3s; }
 #tru .cta-buttons {
+  width: 100%;
   text-align: center;
   padding: 20px 0 0; }
   #tru .cta-buttons .cta-buttons-button {
@@ -544,9 +821,14 @@ li {
     min-width: 120px; }
     #tru .cta-buttons .cta-buttons-button p {
       padding-top: 10px; }
+#tru .title {
+  text-align: center; }
+#tru .order {
+  max-width: 850px; }
 #tru footer {
   border-top: 1px solid rgba(115, 122, 174, 0.2);
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
   #tru footer a:hover {
     opacity: .6;
     transition: all .3s; }
