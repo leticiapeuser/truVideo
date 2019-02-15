@@ -36,22 +36,21 @@
         </a>
         
         
-        <a href="view-quote.html" class="button-rounded-border position-absolute">View Quote</a>
+        <button class="button-rounded-border position-absolute" id="order-button">View Quote</button>
+        <button class="button-rounded-border position-absolute" id="back-button"><i class="fas fa-chevron-left"></i>&nbsp; Back to videos</button>
       </div>
       
       
       
       
     </header>
-    <div class="first-margin container video-container">
+    <!--/VIDEOS//////////////////////////////////-->
+    <div class="first-margin container video-container" id="video">
       <div class="row">
         <div class="col-12">
-          
           <h1 class="my-3 mt-md-5 ml-md-5">Jane Jackson</h1>
-          
         </div>
         <div class="col-12 video-content ">
-          
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -67,7 +66,7 @@
                   <p class="comment">Front and rear brake pads are worn down Lorem ipsum dolor sit amet, consetur adipiscing elit. Nam facilisis est sed tellus.</p>
                   <p class="small pb-2">09/24/2018  9:30 am</p>
                 </div>
-                <video class="d-block w-100" controls alt="First slide">
+                <video class="d-block w-100" controls>
                   <source src="videos/video.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -104,53 +103,332 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+
+     <!--/Quote Approve //////////////////////////////////-->
+    <div class="first-margin container order title" id="quote-approve">
+      <div class="row">
+        <div class="col-12">
+          
+          <h1 class="mt-3 mt-md-5">Your work order quote</h1>
+          <p class="mb-3 mb-md-5 cta bold mt-3 mb-4">Please approve the work you want to be done.</p>
+          
+        </div>
+        <div class="box white table-style">
+          <!--/title//////////////////////////////////-->
+          <div class="table-title d-flex justify-content-between">
+            <div class="large">Work</div>
+            <div class="middle price">Price</div>
+            <div class="small"></div>
+          </div>
+          <hr>
+          <!--/CONTENT//////////////////////////////////-->
+          
+          <div class="table-row d-flex justify-content-between">
+            <div class="large" >Replace Oil Filter </div>
+            <div class="middle price">$ 33.18</div>
+            <div class="small toggle-column">
+              <div class="checkbox toggle-component">
+                <label>
+                  <input type="checkbox" checked data-toggle="toggle">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Wiper Blades</div>
+            <div class="middle price">$ 45.00</div>
+            <div class="small toggle-column">
+              <div class="checkbox toggle-component">
+                <label>
+                  <input type="checkbox" checked data-toggle="toggle">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Hydrolic Filter</div>
+            <div class="middle price">$ 31.50</div>
+            <div class="small toggle-column">
+              <div class="checkbox toggle-component">
+                <label>
+                  <input type="checkbox" checked data-toggle="toggle">
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <hr>
+          <!--/TOTAL//////////////////////////////////-->
+          <div class="table-total d-flex justify-content-between">
+            <div class="large total-text">Work order total:</div>
+            <div class="middle total-price">$ 109.68</div>
+          </div>
+          <a href="#" class="button-cta-rounded mt-4" data-toggle="modal" data-target="#modalApprove">Approve this work</a>
+        </div>
+      </div>
+    </div>
+
+  <!--/waiting Approve //////////////////////////////////-->
+    <div class="first-margin container order title" id="waiting-approve">
+      <div class="row">
+        <div class="col-12">
+          
+          <h1 class="mt-3 mt-md-5">Your work order quote</h1>
+          <p class="mb-3 mb-md-5 cta bold mt-3 mb-4">Your Advisor is working on this order.</p>
+          
+        </div>
+        <div class="box dark table-style">
+          <!--/title//////////////////////////////////-->
+          <div class="table-title d-flex justify-content-center">
+            WORK APPROVED
+          </div>
+          <hr>
+          <!--/CONTENT//////////////////////////////////-->
+          <div class="table-row d-flex justify-content-between">
+            <div class="large" >Replace Oil Filter </div>
+            <div class="middle price">$ 33.18</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Wiper Blades</div>
+            <div class="middle price">$ 45.00</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Hydrolic Filter</div>
+            <div class="middle price">$ 31.50</div>
+          </div>
+          
+          <hr>
+          <!--/TOTAL//////////////////////////////////-->
+          <div class="table-total d-flex justify-content-between">
+            <div class="large total-text">Work order total:</div>
+            <div class="middle total-price">$ 109.68</div>
+          </div>
+          
+          <div class="box-white-bottom">
+            <div class="cta-text-rounded cta mt-4" id="waiting-button">Advisor working</div>
+            <p>Your service advisor will send the payment details, once  the order is finished. <span class="bold">We will contact you shortly.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!--/Quote Pay//////////////////////////////////-->
+    <div class="first-margin container order title" id="quote-pay">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="mt-3 mt-md-5">Your work order quote</h1>
+          <p class="mb-3 mb-md-5 payment bold mt-3 mb-4">Order ready to be paid.</p>
+        </div>
+        <div class="box white table-style">
+          <!--/title//////////////////////////////////-->
+          <div class="table-title d-flex justify-content-between">
+            <div class="large">Work</div>
+            <div class="middle price">Price</div>
+          </div>
+          <hr>
+
+
+          <!--/CONTENT//////////////////////////////////-->
+          <div class="table-row d-flex justify-content-between">
+            <div class="large" >Replace Oil Filter </div>
+            <div class="middle price">$ 33.18</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Wiper Blades</div>
+            <div class="middle price">$ 45.00</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Hydrolic Filter</div>
+            <div class="middle price">$ 31.50</div>
+          </div>
+
+          
+          <hr>
+          <!--/TOTAL//////////////////////////////////-->
+          <div class="table-total d-flex justify-content-between">
+            <div class="large total-text">Work order total:</div>
+            <div class="middle total-price payment">$ 109.68</div>
+          </div>
+          <a href="wait-approve.html" class="button-cta-rounded payment mt-4" data-toggle="modal" data-target="#modalPay">Pay this work</a>
+        </div>
+      </div>
+    </div>
+
+    <!--/Quote Payed//////////////////////////////////-->
+    <div class="first-margin container order title" id="quote-payed">
+      <div class="row">
+        <div class="col-12">
+          
+          <h1 class="mt-3 mt-md-5">Your work order quote</h1>
+          <p class="mb-3 mb-md-5  bold mt-3 mb-4">This is the detail of the work you payed.</p>
+          
+        </div>
+        <div class="box dark table-style">
+          <!--/title//////////////////////////////////-->
+          <div class="table-title d-flex justify-content-center">
+            WORK PAYED
+          </div>
+          <hr>
+          <!--/CONTENT//////////////////////////////////-->
+          
+          <div class="table-row d-flex justify-content-between">
+            <div class="large" >Replace Oil Filter </div>
+            <div class="middle price">$ 33.18</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Wiper Blades</div>
+            <div class="middle price">$ 45.00</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Hydrolic Filter</div>
+            <div class="middle price">$ 31.50</div>
+          </div>
+          
+          <hr>
+          <!--/TOTAL//////////////////////////////////-->
+          <div class="table-total d-flex justify-content-between">
+            <div class="large total-text">Work order total:</div>
+            <div class="middle total-price">$ 109.68</div>
+          </div>
           
         </div>
       </div>
     </div>
-        <!--/CTA BUTTONS//////////////////////////////////-->
-        <div class="cta-buttons my-md-5">
-          <p class="bold">Have questions or need help? </p>
-          <div class="d-flex justify-content-center align-items-center">
-            
-            
-            <div class="cta-buttons-button">
-              <a href="#" class="button-circle tertiary" data-toggle="modal" data-target="#modalThankyou"><i class="fas fa-headset"></i></a>
-              <p class="small">Ask for a call</p>
-            </div>
-            <div class="cta-buttons-button">
-              <a href="tel:+1-111-111-1111" class="button-circle cta"><i class="fas fa-phone"></i></a>
-              <p class="small"> Call us</p>
-            </div>
-            <div class="cta-buttons-button">
-              <a href="sms:+1-111-111-1111" class="button-circle cta2"><i class="far fa-envelope"></i></a>
-              <p class="small">Text Us</p>
-            </div>
+
+
+    <!--/CTA BUTTONS//////////////////////////////////-->
+    <div class="cta-buttons my-md-5">
+      <p class="bold">Have questions or need help? </p>
+      <div class="d-flex justify-content-center align-items-center">
+        
+        
+        <div class="cta-buttons-button">
+          <a href="#" class="button-circle tertiary" data-toggle="modal" data-target="#modalThankyou"><i class="fas fa-headset"></i></a>
+          <p class="small">Ask for a call</p>
+        </div>
+        <div class="cta-buttons-button">
+          <a href="tel:+1-111-111-1111" class="button-circle cta"><i class="fas fa-phone"></i></a>
+          <p class="small"> Call us</p>
+        </div>
+        <div class="cta-buttons-button">
+          <a href="sms:+1-111-111-1111" class="button-circle cta2"><i class="far fa-envelope"></i></a>
+          <p class="small">Text Us</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="d-flex justify-content-center align-items-center">
+        <p class="small">Powered by</p>
+        <a href="https://truvideo.com/" target="_blank"><img src="./images/tru-logo.png" alt="truVideo"></a>
+      </div>
+    </footer>
+    <!--MODALS-->
+    <!--MODAL THANKYOU-->
+    <div class="modal fade" id="modalThankyou" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <h1>Thank you!</h1>
+            <p class="mt-3">Your service advisor will contact you shortly.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button-cta-rounded" data-dismiss="modal">Continue</button>
           </div>
         </div>
-        <footer class="footer">
-          <div class="d-flex justify-content-center align-items-center">
-            <p class="small">Powered by</p>
-            <a href="https://truvideo.com/" target="_blank"><img src="./images/tru-logo.png" alt="truVideo"></a>
+      </div>
+    </div>
+
+
+    <!--MODAL Approve-->
+    <div class="modal fade" id="modalApprove" tabindex="-1" role="dialog" aria-labelledby="modalApproveLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <h1>Work Approved!</h1>
+            <p class="mt-3">Are you sure you want this work to be done?</p>
+            <hr>
+            <div class="table-style mt-2">
+              
+              <!--/CONTENT//////////////////////////////////-->
+              
+              <div class="table-row d-flex justify-content-between">
+                <div class="large" >Replace Oil Filter </div>
+                <div class="middle price">$ 33.18</div>
+              </div>
+              <div class="table-row d-flex justify-content-between">
+                <div class="large">Replace Wiper Blades</div>
+                <div class="middle price">$ 45.00</div>
+              </div>
+              <div class="table-row d-flex justify-content-between">
+                <div class="large">Replace Hydrolic Filter</div>
+                <div class="middle price">$ 31.50</div>
+              </div>
+              
+              <!--/TOTAL//////////////////////////////////-->
+              <div class="table-total d-flex justify-content-between">
+                <div class="large total-text">Work order total:</div>
+                <div class="middle total-price">$ 109.68</div>
+              </div>
+              
+            </div>
           </div>
-        </footer>
+          <div class="modal-footer ">
+            <button type="button" class="button-cta-rounded disabled" data-dismiss="modal">cancel</button>
+            <button id="approve-button" class="button-cta-rounded" data-dismiss="modal" >approve</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-
-        <!--MODALS-->
-        <!--MODAL THANKYOU-->
-        <div class="modal fade" id="modalThankyou" tabindex="-1" role="dialog" aria-labelledby="modalThankyouLabel" aria-hidden="true">
+         <!--MODAL PAY-->
+        <div class="modal fade" id="modalPay" tabindex="-1" role="dialog" aria-labelledby="modalApproveLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <i class="fas fa-times"></i>
               </button>
               <div class="modal-body">
-                <h1>Thank you!</h1>
-                <p class="mt-3">Your service advisor will contact you shortly.</p>
+                <h1>Pay Work</h1>
+                <p class="mt-3">Are you sure you want to pay this work?</p>
+                <hr>
+                <div class="table-style mt-2">
+                  
+                  <!--/CONTENT//////////////////////////////////-->
+                  
+                  <div class="table-row d-flex justify-content-between">
+            <div class="large" >Replace Oil Filter </div>
+            <div class="middle price">$ 33.18</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Wiper Blades</div>
+            <div class="middle price">$ 45.00</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Hydrolic Filter</div>
+            <div class="middle price">$ 31.50</div>
+          </div>
+                  
+                  <!--/TOTAL//////////////////////////////////-->
+                  <div class="table-total d-flex justify-content-between">
+                    <div class="large total-text">Work order total:</div>
+                    <div class="middle payment total-price">$ 109.68</div>
+                  </div>
+                  
+                </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="button-cta-rounded" data-dismiss="modal">Continue</button>
+                <button type="button" class="button-cta-rounded disabled" data-dismiss="modal">cancel</button>
+                <button id="pay-button" class="button-cta-rounded payment" data-dismiss="modal">pay</button>
               </div>
             </div>
           </div>

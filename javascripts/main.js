@@ -11,5 +11,31 @@
         $(this).parent().find(".comment").removeClass("show");
         
      });
+  $("#order-button").click(function() {
+        $(this).hide();
+        $("#back-button").show();
+        $("#video").hide();
+        $("#quote-approve").show();
+     });
+  $("#back-button").click(function() {
+        $(this).hide();
+        $("#order-button").show();
+        $("#video").show();
+        $("#quote-approve").hide();
+        $("#quote-pay").hide();
+        $("#quote-payed").hide();
+     });
+  $("#approve-button").click(function() {        
+        $("#quote-approve").hide();
+        $("#waiting-approve").show();
+     });
+  $("#waiting-button").click(function() {        
+        $("#waiting-approve").hide();
+        $("#quote-pay").show();
+     });
+  $("#pay-button").click(function() {        
+        $("#quote-pay").hide();
+        $("#quote-payed").show();
+     });
 
  });

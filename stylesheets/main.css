@@ -289,6 +289,10 @@ li {
   margin: 0;
   padding: 0; }
 
+#tru #quote-approve, #tru #quote-pay, #tru #waiting-approve, #tru #quote-payed, #tru #back-button {
+  display: none; }
+#tru #waiting-button {
+  cursor: pointer; }
 #tru a {
   text-decoration: none;
   font-weight: normal;
@@ -377,6 +381,7 @@ li {
   align-items: center;
   cursor: pointer;
   white-space: nowrap;
+  background: transparent;
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   color: #737AAE;
