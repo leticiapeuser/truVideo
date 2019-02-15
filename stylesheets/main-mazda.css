@@ -255,6 +255,71 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+#tru .checkbox.toggle-component label {
+  margin-bottom: 0; }
+  #tru .checkbox.toggle-component label .toggle {
+    margin: 0;
+    transition: all .3s;
+    min-width: 40px;
+    min-height: 20px;
+    width: 40px !important;
+    height: 20px;
+    border-radius: 20px; }
+    #tru .checkbox.toggle-component label .toggle.btn {
+      min-width: 40px;
+      min-height: 20px;
+      width: 40px !important;
+      border-radius: 20px;
+      overflow: hidden; }
+      #tru .checkbox.toggle-component label .toggle.btn.btn-primary {
+        background-color: #027CC1;
+        border: 0px; }
+      #tru .checkbox.toggle-component label .toggle.btn.off {
+        transition: all .3s; }
+        #tru .checkbox.toggle-component label .toggle.btn.off .toggle-handle {
+          margin: -7px 0 0 20px; }
+          #tru .checkbox.toggle-component label .toggle.btn.off .toggle-handle.btn-light {
+            transition: all .3s;
+            background-color: white; }
+    #tru .checkbox.toggle-component label .toggle .btn {
+      font-size: 0px;
+      line-height: 100%;
+      padding: 0;
+      border: 0;
+      width: 100%;
+      height: 20px; }
+    #tru .checkbox.toggle-component label .toggle.btn-light {
+      background-color: #dfe1e3;
+      border: 0px;
+      max-width: 40px;
+      width: 40px !important;
+      height: 20px !important;
+      min-width: 40px;
+      min-height: 20px;
+      max-height: 20px;
+      border-radius: 20px;
+      transition: all .3s;
+      overflow: hidden; }
+    #tru .checkbox.toggle-component label .toggle .toggle-group {
+      transition: all .3s; }
+      #tru .checkbox.toggle-component label .toggle .toggle-group .toggle-handle {
+        position: relative;
+        margin: -7px 0 0 -20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 0; }
+        #tru .checkbox.toggle-component label .toggle .toggle-group .toggle-handle.btn-light {
+          transition: all .3s;
+          background-color: white;
+          overflow: hidden; }
+      #tru .checkbox.toggle-component label .toggle .toggle-group .btn-light {
+        transition: all .3s;
+        background-color: #dfe1e3;
+        overflow: hidden; }
+
 /* GENERAL */
 html {
   height: 100%;
@@ -793,68 +858,3 @@ li {
       width: auto;
       max-width: 350px;
       min-width: 120px; }
-
-.checkbox.toggle-component label {
-  margin-bottom: 0; }
-  .checkbox.toggle-component label .toggle {
-    margin: 0;
-    transition: all .3s;
-    min-width: 40px;
-    min-height: 20px;
-    width: 40px !important;
-    height: 20px;
-    border-radius: 20px; }
-    .checkbox.toggle-component label .toggle.btn {
-      min-width: 40px;
-      min-height: 20px;
-      width: 40px !important;
-      border-radius: 20px;
-      overflow: hidden; }
-      .checkbox.toggle-component label .toggle.btn.btn-primary {
-        background-color: #027CC1;
-        border: 0px; }
-      .checkbox.toggle-component label .toggle.btn.off {
-        transition: all .3s; }
-        .checkbox.toggle-component label .toggle.btn.off .toggle-handle {
-          margin: -7px 0 0 20px; }
-          .checkbox.toggle-component label .toggle.btn.off .toggle-handle.btn-light {
-            transition: all .3s;
-            background-color: white; }
-    .checkbox.toggle-component label .toggle .btn {
-      font-size: 0px;
-      line-height: 100%;
-      padding: 0;
-      border: 0;
-      width: 100%;
-      height: 20px; }
-    .checkbox.toggle-component label .toggle.btn-light {
-      background-color: #dfe1e3;
-      border: 0px;
-      max-width: 40px;
-      width: 40px !important;
-      height: 20px !important;
-      min-width: 40px;
-      min-height: 20px;
-      max-height: 20px;
-      border-radius: 20px;
-      transition: all .3s;
-      overflow: hidden; }
-    .checkbox.toggle-component label .toggle .toggle-group {
-      transition: all .3s; }
-      .checkbox.toggle-component label .toggle .toggle-group .toggle-handle {
-        position: relative;
-        margin: -7px 0 0 -20px;
-        padding-top: 0;
-        padding-bottom: 0;
-        height: 16px;
-        width: 16px;
-        border-radius: 50%;
-        border: 0; }
-        .checkbox.toggle-component label .toggle .toggle-group .toggle-handle.btn-light {
-          transition: all .3s;
-          background-color: white;
-          overflow: hidden; }
-      .checkbox.toggle-component label .toggle .toggle-group .btn-light {
-        transition: all .3s;
-        background-color: #dfe1e3;
-        overflow: hidden; }

@@ -794,9 +794,9 @@ li {
       max-width: 350px;
       min-width: 120px; }
 
-.checkbox.toggle-component label {
+#tru .checkbox.toggle-component label {
   margin-bottom: 0; }
-  .checkbox.toggle-component label .toggle {
+  #tru .checkbox.toggle-component label .toggle {
     margin: 0;
     transition: all .3s;
     min-width: 40px;
@@ -804,30 +804,30 @@ li {
     width: 40px !important;
     height: 20px;
     border-radius: 20px; }
-    .checkbox.toggle-component label .toggle.btn {
+    #tru .checkbox.toggle-component label .toggle.btn {
       min-width: 40px;
       min-height: 20px;
       width: 40px !important;
       border-radius: 20px;
       overflow: hidden; }
-      .checkbox.toggle-component label .toggle.btn.btn-primary {
+      #tru .checkbox.toggle-component label .toggle.btn.btn-primary {
         background-color: #3352FF;
         border: 0px; }
-      .checkbox.toggle-component label .toggle.btn.off {
+      #tru .checkbox.toggle-component label .toggle.btn.off {
         transition: all .3s; }
-        .checkbox.toggle-component label .toggle.btn.off .toggle-handle {
+        #tru .checkbox.toggle-component label .toggle.btn.off .toggle-handle {
           margin: -7px 0 0 20px; }
-          .checkbox.toggle-component label .toggle.btn.off .toggle-handle.btn-light {
+          #tru .checkbox.toggle-component label .toggle.btn.off .toggle-handle.btn-light {
             transition: all .3s;
             background-color: white; }
-    .checkbox.toggle-component label .toggle .btn {
+    #tru .checkbox.toggle-component label .toggle .btn {
       font-size: 0px;
       line-height: 100%;
       padding: 0;
       border: 0;
       width: 100%;
       height: 20px; }
-    .checkbox.toggle-component label .toggle.btn-light {
+    #tru .checkbox.toggle-component label .toggle.btn-light {
       background-color: #a3a8ca;
       border: 0px;
       max-width: 40px;
@@ -839,9 +839,9 @@ li {
       border-radius: 20px;
       transition: all .3s;
       overflow: hidden; }
-    .checkbox.toggle-component label .toggle .toggle-group {
+    #tru .checkbox.toggle-component label .toggle .toggle-group {
       transition: all .3s; }
-      .checkbox.toggle-component label .toggle .toggle-group .toggle-handle {
+      #tru .checkbox.toggle-component label .toggle .toggle-group .toggle-handle {
         position: relative;
         margin: -7px 0 0 -20px;
         padding-top: 0;
@@ -850,11 +850,11 @@ li {
         width: 16px;
         border-radius: 50%;
         border: 0; }
-        .checkbox.toggle-component label .toggle .toggle-group .toggle-handle.btn-light {
+        #tru .checkbox.toggle-component label .toggle .toggle-group .toggle-handle.btn-light {
           transition: all .3s;
           background-color: white;
           overflow: hidden; }
-      .checkbox.toggle-component label .toggle .toggle-group .btn-light {
+      #tru .checkbox.toggle-component label .toggle .toggle-group .btn-light {
         transition: all .3s;
         background-color: #a3a8ca;
         overflow: hidden; }
