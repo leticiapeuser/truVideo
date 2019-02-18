@@ -272,7 +272,7 @@ textarea {
       border-radius: 20px;
       overflow: hidden; }
       #tru .checkbox.toggle-component label .toggle.btn.btn-primary {
-        background-color: #027CC1;
+        background-color: #008ddd;
         border: 0px; }
       #tru .checkbox.toggle-component label .toggle.btn.off {
         transition: all .3s; }
@@ -420,9 +420,9 @@ li {
   #tru p.bold {
     font-weight: 600; }
   #tru p.cta {
-    color: #027CC1; }
+    color: #008ddd; }
   #tru p.cta2 {
-    color: #C0C3DB; }
+    color: #024d8d; }
   #tru p.payment {
     color: #00BE6D; }
 #tru hr {
@@ -434,8 +434,8 @@ li {
   border-bottom: 1px solid #B6BAC0; }
 #tru .btn-primary {
   color: #fff;
-  background-color: #027CC1;
-  border-color: #027CC1; }
+  background-color: #008ddd;
+  border-color: #008ddd; }
 #tru .button-rounded-border {
   border-radius: 5px;
   border: 2px solid #B6BAC0;
@@ -465,7 +465,7 @@ li {
   align-items: center;
   font-size: 26px;
   color: white;
-  background-color: #027CC1;
+  background-color: #008ddd;
   margin: auto;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
   transition: all .3s; }
@@ -478,7 +478,7 @@ li {
       background-color: #444444;
       transition: all .3s; }
   #tru .button-circle.cta2 {
-    background-color: #C0C3DB; }
+    background-color: #024d8d; }
     #tru .button-circle.cta2:hover {
       background-color: #444444;
       transition: all .3s; }
@@ -493,12 +493,12 @@ li {
   text-transform: uppercase;
   padding: 15px 20px;
   color: white;
-  background-color: #027CC1;
+  background-color: #008ddd;
   margin: auto;
   transition: all .3s;
   border: 0px; }
   #tru .button-cta-rounded:hover {
-    background-color: #C0C3DB;
+    background-color: #024d8d;
     transition: all .3s; }
   #tru .button-cta-rounded.disabled {
     background-color: #B6BAC0; }
@@ -506,9 +506,9 @@ li {
       background-color: #444444;
       transition: all .3s; }
   #tru .button-cta-rounded.cta2 {
-    background-color: #C0C3DB; }
+    background-color: #024d8d; }
     #tru .button-cta-rounded.cta2:hover {
-      background-color: #027CC1;
+      background-color: #008ddd;
       transition: all .3s; }
   #tru .button-cta-rounded.payment {
     background-color: #00BE6D; }
@@ -527,13 +527,13 @@ li {
   text-transform: uppercase;
   padding: 7px 20px;
   color: white;
-  background-color: #027CC1;
+  background-color: #008ddd;
   margin: auto;
   transition: all .3s; }
   #tru .cta-text-rounded.disabled {
     background-color: #B6BAC0; }
   #tru .cta-text-rounded.cta2 {
-    background-color: #C0C3DB; }
+    background-color: #024d8d; }
   #tru .cta-text-rounded.white {
     background-color: white;
     color: #B6BAC0; }
@@ -790,7 +790,7 @@ li {
     text-align: right;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-    color: #027CC1;
+    color: #008ddd;
     font-weight: 600; }
     #tru .table-style .table-total .total-price.payment {
       color: #00BE6D; }

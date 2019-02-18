@@ -18,6 +18,8 @@
     <!--js bootstrap-->
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
     
     <!--Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -34,80 +36,46 @@
         <a class="header-logo">
           <img src="./images/mazda-logo.png" alt="Ford">
         </a>
-        
-        
-        <a href="view-quote.html" class="button-rounded-border position-absolute">View Quote</a>
+        <a href="index.html" class="button-rounded-border position-absolute"><i class="fas fa-chevron-left"></i>&nbsp; Back to videos</a>
       </div>
-      
-      
-      
-      
     </header>
-    <div class="first-margin container video-container">
+    <div class="first-margin container order title">
       <div class="row">
         <div class="col-12">
           
-          <h1 class="my-3 mt-md-5 ml-md-5">Jane Jackson</h1>
+          <h1 class="mt-3 mt-md-5">Your work order quote</h1>
+          <p class="mb-3 mb-md-5  bold mt-3 mb-4">This is the detail of the work you payed.</p>
           
         </div>
-        <div class="col-12 video-content ">
+        <div class="box dark table-style">
+          <!--/title//////////////////////////////////-->
+          <div class="table-title d-flex justify-content-center">
+            WORK PAYED
+          </div>
+          <hr>
+          <!--/CONTENT//////////////////////////////////-->
           
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-caption ">
-                  <div class="text-button expand"><i class="fas fa-chevron-down"></i></div>
-                  <div class="text-button collapse"><i class="fas fa-chevron-up"></i></div>
-                  <p class="comment">Front and rear brake pads are worn down Lorem ipsum dolor sit amet, consetur adipiscing elit. Nam facilisis est sed tellus.</p>
-                  <p class="small pb-2">09/24/2018  9:30 am</p>
-                </div>
-                <video class="d-block w-100" controls alt="First slide">
-                  <source src="videos/video.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption ">
-                  <p class="comment">Consetur adipiscing elit. Nam facilisis est sed tellus.</p>
-                  <p class="small pb-2">09/24/2018  9:30 am</p>
-                </div>
-                <img src="./images/image01.png" alt="Image">
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption ">
-                  <div class="text-button expand"><i class="fas fa-chevron-down"></i></div>
-                  <div class="text-button collapse"><i class="fas fa-chevron-up"></i></div>
-                  <p class="comment">Lorem ipsum dolor sit amet, consetur adipiscing elit. Nam facilisis est sed tellus.</p>
-                  <p class="small pb-2">09/24/2018  9:30 am</p>
-                </div>
-                <img src="./images/image02.png" alt="Image">
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption ">
-                  <p class="comment">Lorem ipsum dolor sit amet.</p>
-                  <p class="small pb-2">09/24/2018  9:30 am</p>
-                </div>
-                <img src="./images/image03.png" alt="Image">
-              </div>
-            </div>
-            <a class="carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <i class="fas fa-chevron-left"></i>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <i class="fas fa-chevron-right"></i>
-              <span class="sr-only">Next</span>
-            </a>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large" >Replace Oil Filter </div>
+            <div class="middle price">$ 33.18</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Wiper Blades</div>
+            <div class="middle price">$ 45.00</div>
+          </div>
+          <div class="table-row d-flex justify-content-between">
+            <div class="large">Replace Hydrolic Filter</div>
+            <div class="middle price">$ 31.50</div>
+          </div>
+          
+          <hr>
+          <!--/TOTAL//////////////////////////////////-->
+          <div class="table-total d-flex justify-content-between">
+            <div class="large total-text">Work order total:</div>
+            <div class="middle total-price">$ 109.68</div>
           </div>
           
         </div>
-      </div>
-    </div>
         <!--/CTA BUTTONS//////////////////////////////////-->
         <div class="cta-buttons my-md-5">
           <p class="bold">Have questions or need help? </p>
@@ -155,6 +123,6 @@
             </div>
           </div>
         </div>
-    
-  </body>
-</html>
+        
+      </body>
+    </html>
