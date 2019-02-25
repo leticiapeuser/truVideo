@@ -359,11 +359,73 @@ li {
             }
         }
 
-        .item {
-            overflow: none;
+        .owl-carousel .owl-wrapper {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            height: $max-height;
+            @media screen and (min-width: $md) {
+                                    height: $max-height-md;
+                                }
+                                @media screen and (min-width: $lg) {
+                                    height: $max-height-lg;
+                                }
+        }
 
-            img {
+        .owl-carousel .owl-stage {
+            height: $max-height;
+            @media screen and (min-width: $md) {
+                                    height: $max-height-md;
+                                }
+                                @media screen and (min-width: $lg) {
+                                    height: $max-height-lg;
+                                }
+        }
+
+        .owl-item {
+            width: 100%;
+            height: $max-height;
+            @media screen and (min-width: $md) {
+                                    height: $max-height-md;
+                                }
+                                @media screen and (min-width: $lg) {
+                                    height: $max-height-lg;
+                                }
+
+            .item {
                 width: 100%;
+                height: 100%;
+                max-height: $max-height;
+                overflow: hidden;
+                @media screen and (min-width: $md) {
+                                    max-height: $max-height-md;
+                                }
+                                @media screen and (min-width: $lg) {
+                                    max-height: $max-height-lg;
+                                }
+
+                img, video {
+                    max-width: 100%;
+                    max-height: $max-height;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    padding-top: 50px;
+                    @media screen and (min-width: $md) {
+                                    max-height: $max-height-md;
+                                }
+                                @media screen and (min-width: $lg) {
+                                    max-height: $max-height-lg;
+                                }
+                }
+
+                &.vertical {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
             }
 
             &.active {
@@ -372,11 +434,12 @@ li {
         }
 
         .owl-nav {
-            width:100%;
-            display:flex;
-            justify-content:space-between;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
         }
-        .owl-prev, .owl-next{
+
+        .owl-prev, .owl-next {
             background-color: $secondary;
             height: 50px;
             width: 25px;
@@ -384,34 +447,32 @@ li {
             top: 50%;
             margin-top: -10px;
             position: absolute;
-
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
             text-align: center;
             transition: all .3s;
-            
-            span{
-                font-size:20px;
+
+            span {
+                font-size: 20px;
                 margin-top: -5px;
             }
-             &:hover {
+
+            &:hover {
                 width: 33px;
                 transition: all .3s;
             }
         }
+
         .owl-prev {
-            left:-10px;
+            left: -10px;
             border-radius: 0px 25px 25px 0;
-            
-           
         }
 
         .owl-next {
-           right:-10px;
+            right: -10px;
             border-radius: 25px 0 0 25px;
-            
         }
 
         .carousel-caption {
@@ -442,10 +503,10 @@ li {
         }
 
         .owl-dots {
-                padding-top: 20px;
-            display:flex;
+            padding-top: 20px;
+            display: flex;
             justify-content: center;
-            align-items:center;
+            align-items: center;
 
             .owl-dot {
                 width: 25px;
