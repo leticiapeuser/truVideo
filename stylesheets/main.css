@@ -1,126 +1,926 @@
-/*
-Error: Undefined variable: "$max-height-md".
-        on line 368 of /Users/leticiapeuser/Documents/projects/truVideo/sass/partials/_general.scss
-        from line 8 of /Users/leticiapeuser/Documents/projects/truVideo/sass/partials/_base.scss
-        from line 1 of /Users/leticiapeuser/Documents/projects/truVideo/sass/main.scss
-
-Backtrace:
-/Users/leticiapeuser/Documents/projects/truVideo/sass/partials/_general.scss:368
-/Users/leticiapeuser/Documents/projects/truVideo/sass/partials/_base.scss:8
-/Users/leticiapeuser/Documents/projects/truVideo/sass/main.scss:1
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:516:in `visit_media'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:88:in `with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:88:in `with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/engine.rb:284:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:17:in `block in render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:16:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/plugin/compiler.rb:209:in `each'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/sass/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/sass_compiler.rb:40:in `compile!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/update_project.rb:49:in `perform'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/base.rb:18:in `execute'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:52:in `block in <main>'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `<main>'
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$max-height-md\".\A         on line 368 of /Users/leticiapeuser/Documents/projects/truVideo/sass/partials/_general.scss\A         from line 8 of /Users/leticiapeuser/Documents/projects/truVideo/sass/partials/_base.scss\A         from line 1 of /Users/leticiapeuser/Documents/projects/truVideo/sass/main.scss"; }
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*
+ * Image replacement
+ */
+.ir {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  display: block; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* Clear floats */
+.clear-left {
+  clear: left; }
+
+.clear-right {
+  clear: right; }
+
+.clear {
+  clear: both; }
+
+/* Chrome Frame prompt */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.pie-element {
+  behavior: url("css/PIE.htc");
+  position: relative; }
+
+/* Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
+img {
+  vertical-align: middle; }
+
+/* Remove default fieldset styles. */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* Allow only vertical resizing of textareas. */
+textarea {
+  resize: vertical; }
+
+* {
+  /*@include box-sizing(border-box); */ }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/* GENERAL */
+html {
+  height: 100%;
+  position: relative;
+  -webkit-text-size-adjust: none;
+  font-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: none;
+  transition: all .5s; }
+
+body#tru {
+  height: 100%;
+  background-color: #222333;
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: none;
+  transition: all .5s;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#tru #quote-approve, #tru #quote-pay, #tru #waiting-approve, #tru #quote-payed, #tru #back-button {
+  display: none; }
+#tru #waiting-button {
+  cursor: pointer; }
+#tru a {
+  text-decoration: none;
+  font-weight: normal;
+  transition: all .5s; }
+#tru img {
+  outline: none; }
+#tru a img {
+  border: none; }
+#tru h1, #tru h2, #tru h3, #tru h4, #tru h5, #tru p {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 100%; }
+#tru h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: 300; }
+#tru h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 300; }
+#tru h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #737AAE;
+  font-weight: 300;
+  font-style: italic; }
+#tru h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #737AAE;
+  font-weight: 300; }
+  #tru h4.small {
+    font-size: 18px; }
+  #tru h4.large {
+    font-size: 40px; }
+    #tru h4.large.regular {
+      font-weight: 300; }
+#tru h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #737AAE;
+  font-weight: 300; }
+#tru p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  line-height: 120%; }
+  #tru p.small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #737AAE;
+    font-weight: 600;
+    padding: 2px 0 5px 0;
+    opacity: 1;
+    line-height: 100%; }
+  #tru p.bold {
+    font-weight: 600; }
+  #tru p.cta {
+    color: #3352FF; }
+  #tru p.cta2 {
+    color: #3FE3FD; }
+  #tru p.payment {
+    color: #00BE6D; }
+#tru hr {
+  padding: 20px 0 0 0;
+  margin: 0 0 10px;
+  width: 100%;
+  height: 1px;
+  border: 0px;
+  border-bottom: 1px solid #737AAE; }
+#tru .btn-primary {
+  color: #fff;
+  background-color: #3352FF;
+  border-color: #3352FF; }
+#tru .button-rounded-border {
+  border-radius: 20px;
+  border: 2px solid #737AAE;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  background: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  color: #737AAE;
+  font-weight: 600;
+  transition: all .3s; }
+  #tru .button-rounded-border:hover {
+    background: #737AAE;
+    color: #222333;
+    transition: all .3s; }
+#tru .button-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: white;
+  background-color: #3352FF;
+  margin: auto;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+  transition: all .3s; }
+  #tru .button-circle:hover {
+    background-color: #2A2C47;
+    transition: all .3s; }
+  #tru .button-circle.tertiary {
+    background-color: #737AAE; }
+    #tru .button-circle.tertiary:hover {
+      background-color: #2A2C47;
+      transition: all .3s; }
+  #tru .button-circle.cta2 {
+    background-color: #3FE3FD; }
+    #tru .button-circle.cta2:hover {
+      background-color: #2A2C47;
+      transition: all .3s; }
+#tru .button-cta-rounded {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  color: white;
+  background-color: #3352FF;
+  margin: auto;
+  transition: all .3s;
+  border: 0px; }
+  #tru .button-cta-rounded:hover {
+    background-color: #3FE3FD;
+    transition: all .3s; }
+  #tru .button-cta-rounded.disabled {
+    background-color: #737AAE; }
+    #tru .button-cta-rounded.disabled:hover {
+      background-color: #2A2C47;
+      transition: all .3s; }
+  #tru .button-cta-rounded.cta2 {
+    background-color: #3FE3FD; }
+    #tru .button-cta-rounded.cta2:hover {
+      background-color: #3352FF;
+      transition: all .3s; }
+  #tru .button-cta-rounded.payment {
+    background-color: #00BE6D; }
+    #tru .button-cta-rounded.payment:hover {
+      background-color: #222333;
+      transition: all .3s; }
+#tru .cta-text-rounded {
+  width: auto;
+  max-width: 270px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  color: white;
+  background-color: #3352FF;
+  margin: auto;
+  transition: all .3s; }
+  #tru .cta-text-rounded.disabled {
+    background-color: #737AAE; }
+  #tru .cta-text-rounded.cta2 {
+    background-color: #3FE3FD; }
+  #tru .cta-text-rounded.white {
+    background-color: white;
+    color: #737AAE; }
+  #tru .cta-text-rounded.payment {
+    background-color: #00BE6D; }
+#tru header {
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+  padding: 10px 20px;
+  background: #2A2C47;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7); }
+  #tru header .container {
+    max-width: 850px;
+    padding: 0; }
+  #tru header .header-logo {
+    max-width: 55%; }
+    #tru header .header-logo img {
+      width: 100%; }
+  #tru header .button-rounded-border {
+    right: 0px; }
+#tru h1 .dealer-name {
+  padding: 20px 0; }
+#tru .first-margin {
+  margin-top: 75px; }
+#tru .video-container {
+  max-width: 850px; }
+#tru .video-content {
+  width: 94%;
+  max-width: 94%;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #2A2C47;
+  border-radius: 5px;
+  padding: 10px 10px 30px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7); }
+  @media screen and (min-width: 544px) {
+    #tru .video-content {
+      padding: 30px 30px 40px;
+      border-radius: 20px; } }
+  #tru .video-content p.comment {
+    opacity: .8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 120%;
+    opacity: .7; }
+    @media screen and (min-width: 544px) {
+      #tru .video-content p.comment {
+        font-size: 14px; } }
+    #tru .video-content p.comment.show {
+      white-space: normal;
+      overflow: visible; }
+  #tru .video-content .owl-carousel .owl-wrapper {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 300px; }
+    @media screen and (min-width: 768px) {
+      #tru .video-content .owl-carousel .owl-wrapper {
+        height: 500px; } }
+    @media screen and (min-width: 992px) {
+      #tru .video-content .owl-carousel .owl-wrapper {
+        height: 600px; } }
+  #tru .video-content .owl-carousel .owl-stage {
+    height: 300px; }
+    @media screen and (min-width: 768px) {
+      #tru .video-content .owl-carousel .owl-stage {
+        height: 500px; } }
+    @media screen and (min-width: 992px) {
+      #tru .video-content .owl-carousel .owl-stage {
+        height: 600px; } }
+  #tru .video-content .owl-item {
+    width: 100%;
+    height: 300px; }
+    @media screen and (min-width: 768px) {
+      #tru .video-content .owl-item {
+        height: 500px; } }
+    @media screen and (min-width: 992px) {
+      #tru .video-content .owl-item {
+        height: 600px; } }
+    #tru .video-content .owl-item .item {
+      width: 100%;
+      height: 100%;
+      max-height: 300px;
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #tru .video-content .owl-item .item {
+          max-height: 500px; } }
+      @media screen and (min-width: 992px) {
+        #tru .video-content .owl-item .item {
+          max-height: 600px; } }
+      #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
+        max-width: 100%;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 50px; }
+        @media screen and (min-width: 768px) {
+          #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
+            max-height: 500px; } }
+        @media screen and (min-width: 992px) {
+          #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
+            max-height: 600px; } }
+      #tru .video-content .owl-item .item.vertical {
+        margin-top: 0;
+        margin-left: 0; }
+    #tru .video-content .owl-item.active {
+      overflow: none; }
+  #tru .video-content .owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  #tru .video-content .owl-prev, #tru .video-content .owl-next {
+    background-color: #2A2C47;
+    height: 50px;
+    width: 25px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition: all .3s; }
+    #tru .video-content .owl-prev span, #tru .video-content .owl-next span {
+      font-size: 20px;
+      margin-top: -5px; }
+    #tru .video-content .owl-prev:hover, #tru .video-content .owl-next:hover {
+      width: 33px;
+      transition: all .3s; }
+  #tru .video-content .owl-prev {
+    left: -10px;
+    border-radius: 0px 25px 25px 0; }
+  #tru .video-content .owl-next {
+    right: -10px;
+    border-radius: 25px 0 0 25px; }
+  #tru .video-content .carousel-caption {
+    bottom: auto;
+    text-align: left;
+    position: relative;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding: 0 25px 0 0; }
+    #tru .video-content .carousel-caption p.small {
+      opacity: .6; }
+    #tru .video-content .carousel-caption .text-button {
+      z-index: 10;
+      position: absolute;
+      top: -18px;
+      right: -15px;
+      padding: 15px;
+      color: #737AAE; }
+      #tru .video-content .carousel-caption .text-button.collapse {
+        display: none; }
+  #tru .video-content .owl-dots {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #tru .video-content .owl-dots .owl-dot {
+      width: 25px;
+      height: 6px;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      border-radius: 3px;
+      border: 1px solid #737AAE;
+      cursor: pointer;
+      background-color: rgba(115, 122, 174, 0);
+      transition: all .3s; }
+      #tru .video-content .owl-dots .owl-dot:hover {
+        background-color: rgba(115, 122, 174, 0.6);
+        transition: all .3s; }
+      #tru .video-content .owl-dots .owl-dot.active {
+        background-color: #737aae;
+        transition: all .3s; }
+#tru .cta-buttons {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 0; }
+  #tru .cta-buttons .cta-buttons-button {
+    text-align: center;
+    padding: 10px 0 20px;
+    min-width: 100px; }
+    @media screen and (min-width: 544px) {
+      #tru .cta-buttons .cta-buttons-button {
+        padding: 20px 20px 20px; } }
+    #tru .cta-buttons .cta-buttons-button p {
+      padding-top: 5px;
+      text-transform: uppercase;
+      opacity: .8; }
+#tru .title {
+  text-align: center; }
+#tru .order {
+  max-width: 850px; }
+#tru footer {
+  border-top: 1px solid rgba(115, 122, 174, 0.2);
+  padding: 10px;
+  width: 100%; }
+  #tru footer a:hover {
+    opacity: .6;
+    transition: all .3s; }
+  #tru footer img {
+    padding: 0 10px; }
+
+/* GENERAL */
+#tru .box {
+  width: 94%;
+  max-width: 94%;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 10px 30px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+  padding: 20px 25px; }
+  @media screen and (min-width: 544px) {
+    #tru .box {
+      padding: 30px 30px 40px;
+      border-radius: 20px; } }
+  #tru .box.dark {
+    background: #2A2C47; }
+    #tru .box.dark hr {
+      opacity: .1; }
+    #tru .box.dark .table-title {
+      color: white; }
+    #tru .box.dark .table-row {
+      color: rgba(255, 255, 255, 0.4); }
+      #tru .box.dark .table-row .price {
+        font-weight: 400;
+        color: white; }
+    #tru .box.dark .table-total .total-text {
+      color: white; }
+    #tru .box.dark .table-total .total-price {
+      color: white; }
+    #tru .box.dark .box-white-bottom {
+      background-color: white;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: calc(100% + 50px);
+      padding: 30px 20px;
+      margin: 30px -25px -20px;
+      position: relative; }
+      #tru .box.dark .box-white-bottom p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        color: #2A2C47;
+        font-weight: 400;
+        line-height: 100%; }
+        #tru .box.dark .box-white-bottom p span.bold {
+          font-weight: 600; }
+      @media screen and (min-width: 544px) {
+        #tru .box.dark .box-white-bottom {
+          padding: 30px 30px 40px;
+          padding: 30px 50px;
+          margin: 30px -30px -40px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          width: calc(100% + 60px); } }
+      #tru .box.dark .box-white-bottom .cta-text-rounded {
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px; }
+#tru .table-style hr {
+  opacity: .3;
+  padding: 10px 0 0 0;
+  margin: 0 0 6px; }
+#tru .table-style .large {
+  min-width: 60%; }
+#tru .table-style .middle {
+  min-width: 15%; }
+#tru .table-style .small {
+  width: 40px;
+  max-width: 40px; }
+#tru .table-style .table-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(34, 35, 51, 0.5);
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase; }
+  #tru .table-style .table-title .price {
+    text-align: right; }
+#tru .table-style .table-row {
+  padding: 7px 0;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #222333;
+  font-weight: 400;
+  text-align: left; }
+  #tru .table-style .table-row .price {
+    font-weight: 600;
+    text-align: right; }
+#tru .table-style .table-total {
+  padding: 0;
+  align-items: center; }
+  #tru .table-style .table-total .total-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #222333;
+    font-weight: 600;
+    text-align: left; }
+  #tru .table-style .table-total .total-price {
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #3352FF;
+    font-weight: 600; }
+    #tru .table-style .table-total .total-price.payment {
+      color: #00BE6D; }
+
+/* GENERAL */
+#tru .modal {
+  text-align: center;
+  padding: 0 !important; }
+  #tru .modal hr {
+    opacity: .3; }
+#tru .modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+  /* Adjusts for spacing */ }
+#tru .modal-dialog {
+  max-width: 600px;
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle; }
+#tru .modal-content {
+  border-radius: 5px;
+  border: 0px; }
+  @media screen and (min-width: 544px) {
+    #tru .modal-content {
+      border-radius: 20px; } }
+  #tru .modal-content .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 15px 20px;
+    color: #222333;
+    text-shadow: none;
+    opacity: 1;
+    z-index: 100; }
+    #tru .modal-content .close i {
+      font-size: 16px; }
+  #tru .modal-content .modal-body {
+    padding: 40px 40px 0; }
+    #tru .modal-content .modal-body h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      color: #2A2C47;
+      font-weight: 700;
+      text-align: center; }
+    #tru .modal-content .modal-body p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      color: #2A2C47;
+      font-weight: 400; }
+    #tru .modal-content .modal-body h2 {
+      padding-top: 22px;
+      padding-bottom: 10px;
+      font-weight: 300; }
+  #tru .modal-content .modal-footer {
+    border-top: 0px;
+    padding: 25px 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #tru .modal-content .modal-footer .button-cta-rounded {
+      margin: 0 10px;
+      width: auto;
+      max-width: 350px;
+      min-width: 120px; }
+
+#tru .checkbox.toggle-component label {
+  margin-bottom: 0; }
+  #tru .checkbox.toggle-component label .toggle {
+    margin: 0;
+    transition: all .3s;
+    min-width: 40px;
+    min-height: 20px;
+    width: 40px !important;
+    height: 20px;
+    border-radius: 20px; }
+    #tru .checkbox.toggle-component label .toggle.btn {
+      min-width: 40px;
+      min-height: 20px;
+      width: 40px !important;
+      border-radius: 20px;
+      overflow: hidden; }
+      #tru .checkbox.toggle-component label .toggle.btn.btn-primary {
+        background-color: #3352FF;
+        border: 0px; }
+      #tru .checkbox.toggle-component label .toggle.btn.off {
+        transition: all .3s; }
+        #tru .checkbox.toggle-component label .toggle.btn.off .toggle-handle {
+          margin: -7px 0 0 20px; }
+          #tru .checkbox.toggle-component label .toggle.btn.off .toggle-handle.btn-light {
+            transition: all .3s;
+            background-color: white; }
+    #tru .checkbox.toggle-component label .toggle .btn {
+      font-size: 0px;
+      line-height: 100%;
+      padding: 0;
+      border: 0;
+      width: 100%;
+      height: 20px; }
+    #tru .checkbox.toggle-component label .toggle.btn-light {
+      background-color: #a3a8ca;
+      border: 0px;
+      max-width: 40px;
+      width: 40px !important;
+      height: 20px !important;
+      min-width: 40px;
+      min-height: 20px;
+      max-height: 20px;
+      border-radius: 20px;
+      transition: all .3s;
+      overflow: hidden; }
+    #tru .checkbox.toggle-component label .toggle .toggle-group {
+      transition: all .3s; }
+      #tru .checkbox.toggle-component label .toggle .toggle-group .toggle-handle {
+        position: relative;
+        margin: -7px 0 0 -20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 0; }
+        #tru .checkbox.toggle-component label .toggle .toggle-group .toggle-handle.btn-light {
+          transition: all .3s;
+          background-color: white;
+          overflow: hidden; }
+      #tru .checkbox.toggle-component label .toggle .toggle-group .btn-light {
+        transition: all .3s;
+        background-color: #a3a8ca;
+        overflow: hidden; }

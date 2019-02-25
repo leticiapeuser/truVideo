@@ -602,7 +602,7 @@ li {
         height: 500px; } }
     @media screen and (min-width: 992px) {
       #tru .video-content .owl-carousel .owl-wrapper {
-        height: 700px; } }
+        height: 600px; } }
   #tru .video-content .owl-carousel .owl-stage {
     height: 300px; }
     @media screen and (min-width: 768px) {
@@ -610,7 +610,7 @@ li {
         height: 500px; } }
     @media screen and (min-width: 992px) {
       #tru .video-content .owl-carousel .owl-stage {
-        height: 700px; } }
+        height: 600px; } }
   #tru .video-content .owl-item {
     width: 100%;
     height: 300px; }
@@ -619,7 +619,7 @@ li {
         height: 500px; } }
     @media screen and (min-width: 992px) {
       #tru .video-content .owl-item {
-        height: 700px; } }
+        height: 600px; } }
     #tru .video-content .owl-item .item {
       width: 100%;
       height: 100%;
@@ -630,7 +630,7 @@ li {
           max-height: 500px; } }
       @media screen and (min-width: 992px) {
         #tru .video-content .owl-item .item {
-          max-height: 700px; } }
+          max-height: 600px; } }
       #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
         max-width: 100%;
         max-height: 300px;
@@ -646,7 +646,7 @@ li {
             max-height: 500px; } }
         @media screen and (min-width: 992px) {
           #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
-            max-height: 700px; } }
+            max-height: 600px; } }
       #tru .video-content .owl-item .item.vertical {
         margin-top: 0;
         margin-left: 0; }
