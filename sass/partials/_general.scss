@@ -1,4 +1,3 @@
-
 /* GENERAL */
 html {
     height: 100%;
@@ -37,12 +36,14 @@ li {
 }
 
 #tru {
-    #quote-approve,#quote-pay,#waiting-approve,#quote-payed,#back-button{
-            display:none;
+    #quote-approve, #quote-pay, #waiting-approve, #quote-payed, #back-button {
+        display: none;
     }
-    #waiting-button{
-        cursor:pointer;
+
+    #waiting-button {
+        cursor: pointer;
     }
+
     a {
         text-decoration: none;
         font-weight: normal;
@@ -136,11 +137,13 @@ li {
         border: 0px;
         border-bottom: 1px solid $tertiary;
     }
+
     .btn-primary {
         color: #fff;
         background-color: $cta;
         border-color: $cta;
     }
+
     .button-rounded-border {
         border-radius: $round20;
         border: 2px solid $tertiary;
@@ -151,7 +154,7 @@ li {
         align-items: center;
         cursor: pointer;
         white-space: nowrap;
-        background:transparent;
+        background: transparent;
 
         @include txt(11px, $tertiary, $bold);
 
@@ -203,21 +206,22 @@ li {
             }
         }
     }
+
     .button-cta-rounded {
         width: 100%;
-        max-width:350px;
+        max-width: 350px;
         border-radius: $round30;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 11px;
-        text-transform:uppercase;
-        padding:15px 20px;
+        text-transform: uppercase;
+        padding: 15px 20px;
         color: white;
         background-color: $cta;
         margin: auto;
         transition: all .3s;
-        border:0px;
+        border: 0px;
 
         &:hover {
             background-color: $cta2;
@@ -241,6 +245,7 @@ li {
                 transition: all .3s;
             }
         }
+
         &.payment {
             background-color: $payment;
 
@@ -250,43 +255,38 @@ li {
             }
         }
     }
+
     .cta-text-rounded {
         width: auto;
-        max-width:270px;
+        max-width: 270px;
         border-radius: $round30;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 12px;
-        font-weight:$bold;
-        text-transform:uppercase;
-        padding:7px 20px;
+        font-weight: $bold;
+        text-transform: uppercase;
+        padding: 7px 20px;
         color: white;
         background-color: $cta;
         margin: auto;
         transition: all .3s;
 
-
         &.disabled {
             background-color: $tertiary;
-
-           
         }
 
         &.cta2 {
             background-color: $cta2;
-
-            
         }
+
         &.white {
             background-color: white;
-            color:$tertiary;
-
-            
+            color: $tertiary;
         }
+
         &.payment {
             background-color: $payment;
-
         }
     }
 
@@ -298,7 +298,7 @@ li {
         background: $secondary;
         position: fixed;
         top: 0;
-        display:flex;
+        display: flex;
         align-items: center;
 
         @include shadow;
@@ -307,10 +307,12 @@ li {
             max-width: $max-width-desktop;
             padding: 0;
         }
-        .header-logo{
-            max-width:55%;
-            img{
-                width:100%;
+
+        .header-logo {
+            max-width: 55%;
+
+            img {
+                width: 100%;
             }
         }
 
@@ -357,45 +359,59 @@ li {
             }
         }
 
-        .carousel-item {
+        .item {
             overflow: none;
-            img{
-                width:100%;
+
+            img {
+                width: 100%;
             }
+
             &.active {
                 overflow: none;
             }
         }
 
-        .carousel-control {
+        .owl-nav {
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+        }
+        .owl-prev, .owl-next{
             background-color: $secondary;
             height: 50px;
             width: 25px;
+            z-index: 1;
             top: 50%;
             margin-top: -10px;
-            bottom: auto;
-            opacity: 1;
+            position: absolute;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
             transition: all .3s;
-
-            i {
-                font-size: 12px;
-                opacity: .6;
+            
+            span{
+                font-size:20px;
+                margin-top: -5px;
             }
-
-            &:hover {
+             &:hover {
                 width: 33px;
                 transition: all .3s;
             }
         }
-
-        .carousel-control-prev {
+        .owl-prev {
+            left:-10px;
             border-radius: 0px 25px 25px 0;
-            left: -10px;
+            
+           
         }
 
-        .carousel-control-next {
+        .owl-next {
+           right:-10px;
             border-radius: 25px 0 0 25px;
-            right: -10px;
+            
         }
 
         .carousel-caption {
@@ -406,8 +422,9 @@ li {
             left: 0;
             right: 0;
             padding: 0 25px 0 0;
-            p.small{
-                opacity:.6;
+
+            p.small {
+                opacity: .6;
             }
 
             .text-button {
@@ -422,13 +439,15 @@ li {
                     display: none;
                 }
             }
-
         }
 
-        .carousel-indicators {
-            bottom: -35px;
+        .owl-dots {
+                padding-top: 20px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
 
-            li {
+            .owl-dot {
                 width: 25px;
                 height: 6px;
                 margin-right: 3px;
@@ -454,24 +473,23 @@ li {
     }
 
     .cta-buttons {
-        width:100%;
+        width: 100%;
         text-align: center;
         padding: 15px 0 0;
-
 
         .cta-buttons-button {
             text-align: center;
             padding: 10px 0 20px;
             min-width: 100px;
 
-                @media screen and (min-width: $sm) {
-                    padding: 20px 20px 20px;
-                }
+            @media screen and (min-width: $sm) {
+                padding: 20px 20px 20px;
+            }
 
             p {
                 padding-top: 5px;
-                text-transform:uppercase;
-                opacity:.8;
+                text-transform: uppercase;
+                opacity: .8;
             }
         }
     }
@@ -498,5 +516,4 @@ li {
             padding: 0 10px;
         }
     }
-
 }
