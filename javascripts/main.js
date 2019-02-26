@@ -1,11 +1,13 @@
  $(document).ready(function() {
-
+    //Expand comment to see all the text
      $(".expand").click(function() {
          $(this).hide();
          $(".collapse").show();
          $(".comment").removeClass("ellipsis");
 
      });
+     //collapse comment to see only one line with ellipsis
+     
      $(".collapse").click(function() {
          $(this).hide();
          $(".expand").show();
@@ -38,6 +40,9 @@
          $("#quote-pay").hide();
          $("#quote-payed").show();
      });
+
+     //starting OWL carousel
+
      var owl = $('.owl-carousel');
      owl.owlCarousel({
              nav: true,
@@ -53,7 +58,7 @@
                  }
              }
          })
-         // Listen to owl events:
+    //create function to check the height of the comment  of each video and add ellipsis if necessary
 
      function checkHeight(slideId) {
          var comment = $("#comment_"+slideId);
@@ -70,6 +75,7 @@
          }
      }
      checkHeight(0) ;
+
      owl.on('changed.owl.carousel', function(event) {
          checkHeight(event.item.index) ;
      });
