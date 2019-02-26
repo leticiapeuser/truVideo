@@ -2,14 +2,14 @@
 
      $(".expand").click(function() {
          $(this).hide();
-         $(this).parent().find(".collapse").show();
-         $(this).parent().find(".comment").removeClass("ellipsis");
+         $(".collapse").show();
+         $(".comment").removeClass("ellipsis");
 
      });
      $(".collapse").click(function() {
          $(this).hide();
-         $(this).parent().find(".expand").show();
-         $(this).parent().find(".comment").addClass("ellipsis");
+         $(".expand").show();
+         $(".comment").addClass("ellipsis");
 
      });
      $("#order-button").click(function() {
@@ -55,22 +55,23 @@
          })
          // Listen to owl events:
 
-     function checkHeight() {
-         var comment = $(".active").find(".comment");
+     function checkHeight(slideId) {
+         var comment = $("#comment_"+slideId);
          var commentHeight = comment.height();
-         console.log(comment.height());
          if (commentHeight > 16) {
              $('.expand').show();
-             $('.comment').addClass("ellipsis");
+             $('.collapse').hide();
+             comment.addClass("ellipsis");
 
          }else{
           $('.expand').hide();
+          $('.collapse').hide();
           $('.comment').removeClass("ellipsis");
          }
      }
-     checkHeight() ;
+     checkHeight(0) ;
      owl.on('changed.owl.carousel', function(event) {
-         checkHeight() ;
+         checkHeight(event.item.index) ;
      });
 
 
