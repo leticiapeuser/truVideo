@@ -341,21 +341,22 @@ li {
         p {
             &.comment {
                 opacity: .8;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-size: 13px;
+                font-size: 14px;
                 line-height: 120%;
                 opacity: .7;
+                padding:5px 0;
+                white-space: normal;
+                    overflow: visible;
 
                 @media screen and (min-width: $sm) {
                     font-size: 14px;
                 }
-
-                &.show {
-                    white-space: normal;
-                    overflow: visible;
+                &.ellipsis{
+                    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 }
+                
             }
         }
 
@@ -479,10 +480,11 @@ li {
             bottom: auto;
             text-align: left;
             position: relative;
-            top: 0px;
+            top: -2px;
             left: 0;
             right: 0;
             padding: 0 25px 0 0;
+            background-color:$secondary;
 
             p.small {
                 opacity: .6;
@@ -490,15 +492,12 @@ li {
 
             .text-button {
                 z-index: 10;
-                position: absolute;
-                top: -18px;
-                right: -15px;
+                position: absolute;                
                 padding: 15px;
+                top: -10px;
+                right: -10px;
                 color: $tertiary;
-
-                &.collapse {
-                    display: none;
-                }
+                display: none;
             }
         }
 
