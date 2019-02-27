@@ -302,6 +302,9 @@ li {
         align-items: center;
 
         @include shadow;
+        @media screen and (max-width: $sm) {
+                    position:absolute;
+                }
 
         .container {
             max-width: $max-width-desktop;

@@ -46,6 +46,7 @@
      var owl = $('.owl-carousel');
      owl.owlCarousel({
              nav: true,
+             autoHeight:true,
              responsive: {
                  0: {
                      items: 1
@@ -79,6 +80,8 @@
      owl.on('changed.owl.carousel', function(event) {
          checkHeight(event.item.index) ;
      });
+
+
 
 
 
