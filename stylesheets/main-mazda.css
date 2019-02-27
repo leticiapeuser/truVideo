@@ -596,6 +596,8 @@ li {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+  #tru .video-content .owl-stage-outer {
+    max-height: 300px; }
   #tru .video-content .owl-carousel .owl-wrapper {
     display: flex !important;
     justify-content: center;

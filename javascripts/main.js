@@ -1,5 +1,5 @@
  $(document).ready(function() {
-    //Expand comment to see all the text
+     //Expand comment to see all the text
      $(".expand").click(function() {
          $(this).hide();
          $(".collapse").show();
@@ -7,7 +7,7 @@
 
      });
      //collapse comment to see only one line with ellipsis
-     
+
      $(".collapse").click(function() {
          $(this).hide();
          $(".expand").show();
@@ -45,44 +45,46 @@
 
      var owl = $('.owl-carousel');
      owl.owlCarousel({
-             nav: true,
-             autoHeight:true,
-             responsive: {
-                 0: {
-                     items: 1
-                 },
-                 600: {
-                     items: 1
-                 },
-                 1000: {
-                     items: 1
-                 }
+         nav: true,
+         singleItem: true,
+         autoHeight: true,
+         responsive: true,
+         responsiveRefreshRate: 200,
+         responsiveBaseWidth: window,
+         responsive: {
+             0: {
+                 items: 1
+             },
+             600: {
+                 items: 1
+             },
+             1000: {
+                 items: 1
              }
-         })
-    //create function to check the height of the comment  of each video and add ellipsis if necessary
+         }
+     })
+
+     //create function to check the height of the comment  of each video and add ellipsis if necessary
 
      function checkHeight(slideId) {
-         var comment = $("#comment_"+slideId);
+         var comment = $("#comment_" + slideId);
          var commentHeight = comment.height();
          if (commentHeight > 16) {
              $('.expand').show();
              $('.collapse').hide();
              comment.addClass("ellipsis");
 
-         }else{
-          $('.expand').hide();
-          $('.collapse').hide();
-          $('.comment').removeClass("ellipsis");
+         } else {
+             $('.expand').hide();
+             $('.collapse').hide();
+             $('.comment').removeClass("ellipsis");
          }
      }
-     checkHeight(0) ;
+     checkHeight(0);
+
 
      owl.on('changed.owl.carousel', function(event) {
-         checkHeight(event.item.index) ;
+         checkHeight(event.item.index);
      });
-
-
-
-
 
  });

@@ -362,6 +362,9 @@ li {
                 
             }
         }
+        .owl-stage-outer{
+            max-height:$max-height;
+        }
 
         .owl-carousel .owl-wrapper {
             display: flex !important;
