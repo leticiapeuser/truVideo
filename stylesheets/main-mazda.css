@@ -633,7 +633,6 @@ li {
                           ax-height: $max-height-lg;
                       }m*/ }
       #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
-        max-width: 100%;
         /* @media screen and (min-width: $md) {
                          max-height: $max-height-md;
                      }
