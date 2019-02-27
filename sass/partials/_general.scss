@@ -364,63 +364,63 @@ li {
             display: flex !important;
             justify-content: center;
             align-items: center;
-            height: $max-height;
+            /*height: $max-height;
             @media screen and (min-width: $md) {
                                     height: $max-height-md;
                                 }
                                 @media screen and (min-width: $lg) {
                                     height: $max-height-lg;
-                                }
+                                }*/
         }
 
         .owl-carousel .owl-stage {
-            height: $max-height;
+            /*height: $max-height;
             @media screen and (min-width: $md) {
                                     height: $max-height-md;
                                 }
                                 @media screen and (min-width: $lg) {
                                     height: $max-height-lg;
-                                }
+                                }*/
         }
 
         .owl-item {
             width: 100%;
-            height: $max-height;
+            /*height: $max-height;
             @media screen and (min-width: $md) {
                                     height: $max-height-md;
                                 }
                                 @media screen and (min-width: $lg) {
                                     height: $max-height-lg;
-                                }
+                                }*/
 
             .item {
                 width: 100%;
                 height: 100%;
-                max-height: $max-height;
+                /*max-height: $max-height;
                 overflow: hidden;
                 @media screen and (min-width: $md) {
                                     max-height: $max-height-md;
                                 }
                                 @media screen and (min-width: $lg) {
-                                    max-height: $max-height-lg;
-                                }
+                                    ax-height: $max-height-lg;
+                                }m*/
 
                 img, video {
                     max-width: 100%;
-                    max-height: $max-height;
-                    width: auto;
-                    height: auto;
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    padding-top: 50px;
-                    @media screen and (min-width: $md) {
+                   // max-height: $max-height;
+                    //width: auto;
+                    //height: auto;
+                    //position: absolute;
+                    //left: 50%;
+                    //top: 50%;
+                    //transform: translate(-50%, -50%);
+                    //padding-top: 50px;
+                   /* @media screen and (min-width: $md) {
                                     max-height: $max-height-md;
                                 }
                                 @media screen and (min-width: $lg) {
                                     max-height: $max-height-lg;
-                                }
+                                }*/
                 }
 
                 &.vertical {

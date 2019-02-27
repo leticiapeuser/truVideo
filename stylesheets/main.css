@@ -532,57 +532,49 @@ li {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    height: 300px; }
-    @media screen and (min-width: 768px) {
-      #tru .video-content .owl-carousel .owl-wrapper {
-        height: 500px; } }
-    @media screen and (min-width: 992px) {
-      #tru .video-content .owl-carousel .owl-wrapper {
-        height: 600px; } }
+    /*height: $max-height;
+    @media screen and (min-width: $md) {
+                            height: $max-height-md;
+                        }
+                        @media screen and (min-width: $lg) {
+                            height: $max-height-lg;
+                        }*/ }
   #tru .video-content .owl-carousel .owl-stage {
-    height: 300px; }
-    @media screen and (min-width: 768px) {
-      #tru .video-content .owl-carousel .owl-stage {
-        height: 500px; } }
-    @media screen and (min-width: 992px) {
-      #tru .video-content .owl-carousel .owl-stage {
-        height: 600px; } }
+    /*height: $max-height;
+    @media screen and (min-width: $md) {
+                            height: $max-height-md;
+                        }
+                        @media screen and (min-width: $lg) {
+                            height: $max-height-lg;
+                        }*/ }
   #tru .video-content .owl-item {
     width: 100%;
-    height: 300px; }
-    @media screen and (min-width: 768px) {
-      #tru .video-content .owl-item {
-        height: 500px; } }
-    @media screen and (min-width: 992px) {
-      #tru .video-content .owl-item {
-        height: 600px; } }
+    /*height: $max-height;
+    @media screen and (min-width: $md) {
+                            height: $max-height-md;
+                        }
+                        @media screen and (min-width: $lg) {
+                            height: $max-height-lg;
+                        }*/ }
     #tru .video-content .owl-item .item {
       width: 100%;
       height: 100%;
-      max-height: 300px;
-      overflow: hidden; }
-      @media screen and (min-width: 768px) {
-        #tru .video-content .owl-item .item {
-          max-height: 500px; } }
-      @media screen and (min-width: 992px) {
-        #tru .video-content .owl-item .item {
-          max-height: 600px; } }
+      /*max-height: $max-height;
+      overflow: hidden;
+      @media screen and (min-width: $md) {
+                          max-height: $max-height-md;
+                      }
+                      @media screen and (min-width: $lg) {
+                          ax-height: $max-height-lg;
+                      }m*/ }
       #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
         max-width: 100%;
-        max-height: 300px;
-        width: auto;
-        height: auto;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding-top: 50px; }
-        @media screen and (min-width: 768px) {
-          #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
-            max-height: 500px; } }
-        @media screen and (min-width: 992px) {
-          #tru .video-content .owl-item .item img, #tru .video-content .owl-item .item video {
-            max-height: 600px; } }
+        /* @media screen and (min-width: $md) {
+                         max-height: $max-height-md;
+                     }
+                     @media screen and (min-width: $lg) {
+                         max-height: $max-height-lg;
+                     }*/ }
       #tru .video-content .owl-item .item.vertical {
         margin-top: 0;
         margin-left: 0; }
