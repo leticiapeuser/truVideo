@@ -42,7 +42,7 @@
      });
 
      //starting OWL carousel
-     setupVideo(0);
+    
      var owl = $('.owl-carousel');
      owl.owlCarousel({
          nav: true,
@@ -85,10 +85,12 @@
      }
 
      function setupVideo(slideIndex) {
-         // check Height
-         checkHeight(slideIndex);
-         console.log("refresh");
+         
          $('.owl-carousel').trigger('refresh.owl.carousel');
+         // check Height
+        
+          checkHeight(slideIndex);
+         console.log("refresh");
      }
 
 
@@ -96,5 +98,7 @@
          checkHeight(event.item.index);
 
      });
+
+      setupVideo(0);
 
  });
