@@ -302,7 +302,7 @@ li {
         align-items: center;
 
         @include shadow;
-        @media screen and (max-width: $sm) {
+        @media screen and (max-width: $md) {
                     position:absolute;
                 }
 
@@ -363,7 +363,7 @@ li {
             }
         }
         .owl-stage-outer{
-            max-height:$max-height;
+            //max-height:$max-height;
         }
 
         .owl-carousel .owl-wrapper {
@@ -390,7 +390,7 @@ li {
         }
 
         .owl-item {
-            width: 100%;
+           //width: 100%;
             /*height: $max-height;
             @media screen and (min-width: $md) {
                                     height: $max-height-md;

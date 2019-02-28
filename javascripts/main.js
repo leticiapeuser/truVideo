@@ -42,7 +42,7 @@
      });
 
      //starting OWL carousel
-
+     setupVideo(0);
      var owl = $('.owl-carousel');
      owl.owlCarousel({
          nav: true,
@@ -51,6 +51,7 @@
          responsive: true,
          responsiveRefreshRate: 200,
          responsiveBaseWidth: window,
+         margin: 5,
          responsive: {
              0: {
                  items: 1
@@ -64,12 +65,14 @@
          }
      })
 
+
      //create function to check the height of the comment  of each video and add ellipsis if necessary
 
-     function checkHeight(slideId) {
-         var comment = $("#comment_" + slideId);
+     function checkHeight(slideIndex) {
+         var comment = $("#comment_" + slideIndex);
          var commentHeight = comment.height();
-         if (commentHeight > 16) {
+         console.log(commentHeight);
+         if (commentHeight > 19) {
              $('.expand').show();
              $('.collapse').hide();
              comment.addClass("ellipsis");
@@ -80,11 +83,18 @@
              $('.comment').removeClass("ellipsis");
          }
      }
-     checkHeight(0);
+
+     function setupVideo(slideIndex) {
+         // check Height
+         checkHeight(slideIndex);
+         console.log("refresh");
+         $('.owl-carousel').trigger('refresh.owl.carousel');
+     }
 
 
      owl.on('changed.owl.carousel', function(event) {
          checkHeight(event.item.index);
+
      });
 
  });
